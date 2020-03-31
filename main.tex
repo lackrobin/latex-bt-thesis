@@ -4,6 +4,9 @@
 \graphicspath{{images/}}
 \usepackage[a4paper,width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry}
 \usepackage{fancyhdr}
+\usepackage[automake]{glossaries}
+\makeglossaries
+\input{tex/glossary}
 \pagestyle{fancy}
 \fancyhead{}
 \fancyhead[RO,LE]{\input{tex/text-resources/titletext}}
@@ -34,6 +37,10 @@
 
 \listoftables
 
+% To generate glossary \glsaddall
+
+
+\printglossary[title=Glossar, toctitle=Glossar]
 
 \chapter{Einführung}
 \input{tex/introduction}
