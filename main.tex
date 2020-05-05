@@ -41,17 +41,20 @@
 \author{\input{tex/text-resources/author}}
 \date{\today}
 
+
 \begin{document}
  
 \input{titlepage}
 
 \input{abstract}
  
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
+
+\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+\renewcommand{\figurename}{Abbildung}
 \tableofcontents
-
-\listoffigures
-
-\listoftables
 
 % To generate glossary \glsaddall
 
@@ -69,9 +72,14 @@
 \chapter{Diskussion}
 \input{tex/discussion}
 
+\listoffigures
+
+\listoftables
+
 \appendix
 \chapter{Anhang}
 \input{tex/appendix}
+
 
 \printbibliography[title={Literaturverzeichnis}, heading=bibintoc]
 
