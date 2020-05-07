@@ -7,14 +7,75 @@ Webanalysen können aber auch aufgrund von anonymisierten, respektive pseudonymi
 Trotz allen Vorkehrungen die getroffen werden um den Datenschutz zu gewährleisten, erfordert ein rechtskonformer Einsatz von Analysetools auch in Zukunft eine genaue Analyse der Rechtslage und kann nicht pauschal das eine oder das andere Tool richtig geheissen werden \parencite[S. 6]{EcommerceUndDatenschutz}.
 
 \subsection{Das kantonale Datenschutzgesetz}
-Zusätzlich zum Bundesgesetz für Datenschutz, unterliegen Verwaltungen dem jeweiligen kantonalen Datenschutzgesetz.
+Zusätzlich zum Bundesgesetz für Datenschutz, unterliegen Verwaltungen dem jeweiligen kantonalen Datenschutzgesetz. Die kantonalen Datenschutzgesetze regeln die Rechtslage zum Schützen von Personen vor Datenmissbrauch durch die Behörden \parencite[Vgl. §§ 1 Abs. 1]{DSSGBERN}. 
 
-Der Kanton Bern erlaubt gemäss \parencite[§§ 15 Abs. 1]{DSSGBERN} das Bearbeiten der Daten für Forschung, Praxisbildung, \bf{Statistik} oder Planung, sofern die Daten anonymisierten oder ohne direkte Personenkennzeichnung verwendet werden.
+Die strikten und von Kanton zu Kanton unterschiedlichen Gesetze zum Datenschutz, erschweren eine rechtskonforme Webanalyse. Das Erheben von Personendaten, welche nicht anonymisierten werden, steht im Konflikt mit mehreren kantonalen Datenschutzgesetz Gesetzen \parencite[Vgl. §§ 15 Abs. 1]{DSSGBERN}. Falls die Daten nicht ausreichend anonymisiert werden, gibt es durch diverse Gesetzesartikel, wie zum Beispiel \parencite[§§ 7 Abs. 1]{DSSGGL}, welcher vorschreibt die Datenbeschaffung für betroffene Personen in erkennbarer Weise durchzuführen, Schwierigkeiten. Kaum ein Webanalysetool vermag es, die gesetzlichen Vorschriften einzuhalten, sollten nicht Anonymisierte Daten verwendet werden.
+
+In der unten stehenden Tabelle \ref{tab: ktrechtslage} ist veranschaulicht, welche Gesetzesartikel die Handhabung anonymisierter Daten regeln und wie die Rechtslage pro Kanton aussieht.
+
+\begin{longtable}{| p{.20\textwidth} | p{.75\textwidth}|} 
+		\hline
+		\textbf{Kanton} & \textbf{Rechtslage}  \\ 
+    \hline
+    Aargau & Im Kanton Aargau ist das Verwenden von Personendaten für nicht personenbezogene Zwecke (Forschung, Planung und Statistik) erlaubt, wenn Personendaten anonymisiert werden, Empfänger der Personendaten diese nur mit Zustimmung des öffentlichen Organs weitergibt und betroffene Personen bei der Veröffentlichung nicht erkennbar sind \parencite[§§ 19 Abs. 1]{DSSGAARGAU}. \\
+    \hline
+		Appenzell Ausserrhoden & Das kantonale Datenschutzgesetz erlaubt die Bearbeitung von personenbezogenen Daten für nicht personenbezogene Zwecke, namentlich für Statistik, Planung und Forschung, wenn die Daten anonymisiert werden und die Ergebnisse der Bearbeitung keine Rückschlüsse auf betroffene Personen erlauben \parencite[§§ 14 Abs. 1]{DSSGAARh}. \\
+    \hline
+		Appenzell Innerrhoden & In Appenzell Innerrhoden dürfen Personendaten für nicht personenbezogene Zwecke bearbeitet werden, wenn sie anonymisierten sind und das Ergebnis keine Rückschlüsse auf betroffene Personen erlaubt. Personendaten dürfen Privaten überlassen werden, sofern die Bestimmung und Geheimhaltung gewährleistet sind \parencite[§§ 7 Abs 1-2]{DSSGAIRh}.\\
+    \hline
+		Basel-Landschaft & Das kantonale Datenschutzgesetz des Kanton Basel-Landschaft erlaubt das Verarbeiten von Personendaten zu einem nicht personenbezogenen Zweck, wenn die Daten so Anonymisiert werden, dass keine Rückschlüsse auf die betroffenen Personen möglich sind \parencite[§§ 11 Abs. 2]{DSSGBL}. Wenn die betroffene Person im Einzelfall einwilligt, dürfen die Personendaten zu ausschliesslich dem Zweck verwendet werden, zu dem sie erhoben worden sind \parencite[§§ 11 Abs. 1]{DSSGBL}. \\
+		\hline
+		Basel-Stadt &  Gemäss Datenschutzgesetz des Kanton Basel-Stadt \parencite[§§ 10 Abs. 1]{DSSGBS} dürfen Personendaten für nicht personenbezogene Zwecke (Statistik, Planung, Wissenschaft und Forschung) verwendet werden, wenn die Daten nicht für einen personenbezogenen Zweck weitergegeben werden, die Daten anonymisierten oder pseudonymisiert werden und die Ergebnisse so bekannt gegeben werden, dass keine Rückschlüsse auf betroffene Personen möglich sind. \\
+		\hline
+    Bern & Der Kanton Bern erlaubt gemäss \parencite[§§ 15 Abs. 1]{DSSGBERN} das Bearbeiten der Daten für Forschung, Praxisbildung, Statistik oder Planung, sofern die Daten anonymisierten oder ohne direkte Personenkennzeichnung verwendet werden. \\
+		\hline
+		Freiburg & Das Freiburger Datenschutzgesetz erlaubt das Einholen von Personendaten durch öffentliche Organe für nicht personenbezogene Zwecke \parencite[§§ 14 Abs. 1]{DSSGFR}. Die Personendaten müssen anonymisiert werden oder ohne direkten Bezug auf betroffene Personen verwendet werden. Ergebnisse müssen so Veröffentlicht werden, dass die betroffenen Personen nicht bestimmbar sind \parencite[§ 16 Abs. 1-2]{DSSGFR}.  \\
+		\hline
+    Genf & Personendaten dürfen zur Verarbeitung an Dritte weitergegeben werden, sofern dies nicht durch die Geheimhaltungspflicht verboten ist, der Unterauftrag der Verarbeitung Gegenstand eines rechtlichen Vertrages ist und bei Verarbeitung im Ausland der Empfängerstaat ein angemessenes Schutzniveau gewährleistet.     \parencite[§§ 13A Abs. 1-5]{DSSGGE} \\
+		\hline
+		Glarus & Laut kantonalem Datenschutzgesetz ist es erlaubt öffentlichen Organen erlaubt Personendaten zu nicht personenbezogenen Zwecken zu bearbeiten falls Daten anonymisiert werden und die Ergebnisse so veröffentlicht werden, dass Betroffene nicht bestimmbar sind. Es gelten ausserdem besondere Vorschriften für den Bereich der medizinischen Forschung.  \parencite[§§ 11 Abs 1-2]{DSSGGL} \\
+		\hline
+		Graubünden & Es gelten die Definitionen gemäss Bundesgesetz \parencite[§§ 2 Abs. 2-3]{DSSGGR}  \\
+		\hline
+		Jura & Kanton Jura teilt sich das Datenschutzgesetz mit dem Kanton Neuenburg \parencite[S. 1 Abs. 2]{JURAAbkommenNE}. \\
+		\hline
+		Neuenburg & Öffentliche Organe des Kanton Neuenburg haben die Erlaubnis Personendaten zu nicht personenbezogenen Zwecken zu verwenden, sofern diese anonymisiert werden, die Weitergabe an dritte durch Zustimmung der Behörde geschieht, und keine betroffenen Personen aus den Ergebnissen auslesbar sind \parencite[§§ 25 Abs. 1]{DSSGNE}. \\
+		\hline
+		Nidwalden & Personendaten dürfen zu nicht personenbezogenen Zwecken bearbeitet werden, wenn die Daten anonymisiert werden, Daten nur mit Zustimmung des Organs an dritte weitergegeben werden und aus den Ergebnissen betroffene Person nicht bestimmbar sind \parencite[§§ 16 Abs 1-2]{DSSGNW}. \\
+		\hline
+		Obwalden & Es gilt das Bundesgesetz \parencite{DSSGOW} \\
+		\hline
+		Schaffhausen & Organe des Kanton Schaffhausen dürfen Personendaten für nicht personenbezogenen Zwecke verwenden, wenn die Daten anonymisierten werden, Ergebnisse keine Bestimmung betroffener Personen zulässt und die Zustimmung des Datenschutzbeauftragten vorliegt \parencite[§§ 12 Abs. 1]{DSSGSH} Personendaten dürfen an private Personen oder Organisationen bekanntgegeben werden, wenn diese nicht an dritte weitergegeben werden und für die Datensicherheit gesorgt ist. Bei der Weitergabe ist eine Vereinbarung abzuschliessen \parencite[§§ 12 Abs 2]{DSSGSH} \\
+		\hline
+    Schwyz & Es dürfen Personendaten für nicht personenbezogene Zwecke bearbeitet werden, wenn die Daten anonymisiert werden und die Ergebnisse keine betroffenen Personen bestimmbar machen. Die Daten dürfen weitergegeben werden, wenn der Empfänger sich dazu verpflichtet, die Daten nicht an Dritte weiterzugeben. \parencite[§§ 14 Abs 1-2]{DSSGSZ} \\
+
+		\hline
+		Solothurn & Das Bearbeiten von Personendaten zu nicht personenbezogenen Zwecken ist erlaubt, wenn die Daten anonymisiert werden \parencite[§§ 16 Abs 3]{DSSGSO}. \\
+    \hline
+		St. Gallen & Das öffentliche Organ muss Personendaten, die es für einen nicht personenbezogenen Zweck verwendet Anonymisieren. Es muss sichergestellt werden, dass aus den Ergebnissen keine Rückschlüsse auf Betroffene möglich sind. Bei der Weitergabe muss durch den Empfänger eine schriftliche Verpflichtung vorliegen, die Daten nicht weiterzugeben und die generell geltenden Gesetze einzuhalten\parencite[§§ 7 Abs 1-3]{DSSGSG}. \\
+		\hline
+		Tessin & Organe des Kanton Tessin dürfen Personendaten für nicht personenbezogene Zwecke bearbeiten, wenn die Daten anonymisiert werden, der Empfänger die Daten mit Genehmigung der zuständigen Stelle erhalten hat, die Ergebnisse so veröffentlicht werden, dass keine Rückschlüsse auf betroffene Personen möglich sind und der Empfänger der Daten die Bestimmungen der Geheimhaltung einhält \parencite[§§ 15 Abs 1-2]{DSSGTI}. \\
+		\hline
+		Thurgau & Personendaten für nicht personenbezogene Zwecke dürfen bearbeitet werden, wenn diese anonymisiert werden, sodass keine Rückschlüsse auf Betroffene möglich sind. Die Personendaten dürfen  weitergegeben werden, falls der Empfänger die Daten nicht an dritte weiter gibt und für die Datensicherheit gesorgt ist \parencite[§§ 11 Abs 1-3]{DSSGTG}. \\
+		\hline
+		Uri & Für Forschung, Planung und Statistik ist es erlaubt Personendaten für nicht personenbezogene Zwecke zu bearbeiten. Dabei sind die Daten zu anonymisieren, sodass bei der Veröffentlichung der Ergebnisse betroffene Person nicht bestimmbar sind. Wenn keine besonderen Geheimhaltungsbestimmungen bestehen, können die Personendaten an andere Behörden zur Bearbeitung weitergegeben werden \parencite[§§ 10 Abs. 1-2]{DSSGUR}. \\
+		\hline
+    Waadt & Das Bearbeiten von Personendaten zu nicht personenbezogenen Zwecken ist gestattet, wenn die Daten anonymisiert werden, es aus den Ergebnissen keine Rückschlüsse auf betroffene Personen möglich sind, die Daten, falls sie weitergegeben werden, nicht an Dritte übertragen werden \parencite[§§ 24 Abs 1-3]{DSSGVD}. \\
+		\hline
+    Wallis & Für Zwecke der Wissenschaft, der Statistik, der Planung oder Forschung dürfen Personendaten zu nicht personenbezogenen Zwecken bearbeitet werden, falls Resultate keine Rückschlüsse auf Betroffene ermöglichen \parencite[§§ 26 Abs. 1]{DSSGVS}.  \\
+		\hline
+    Zug & Daten dürfen für Forschung, Planung und Statistik Bearbeitet werden, wenn sie nicht weitergegeben werden, anonymisiert werden und sich aus den Ergebnissen betroffene Personen nicht bestimmen lassen \parencite[§§ 4 Abs 1e]{DSSGZG}. \\
+		\hline
+    Zürich & Zum Bearbeiten von Personendaten zu nicht personenbezogenen Zwecken, muss der Empfänger nachweisen, dass Personendaten anonymisiert werden und aus den Ergebnissen Rückschlüsse auf die betroffenen Personen unmöglich sind \parencite[§§ 18 Abs. 1-2]{DSSGZH}. \\
+		\hline
+
+    \caption{Kantonale Rechtslage}
+    \label{tab: ktrechtslage}
+	\end{longtable}
 
 
 
-
-\subsection{Datenschutz Strategien}
+\subsection{Strategien zur Datenschutzkonformität}
 Analysetools verfolgen verschiedene Strategien, den Datenschutz zu gewährleisten. Dieses Kapitel veranschaulicht, wie Die Gesetzgebung auf verschiedenen Ebenen aussieht. Zudem wird erläutert, welche Kriterien ein Webanalysetool erfüllen sollte, um für den Einsatz im Verwaltungskontext in Erwägung gezogen zu werden.
 
 \section{Typen von Webanalyse}
