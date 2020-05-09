@@ -170,34 +170,43 @@ Es gibt eine riesige Menge an Tools die auf dem Markt verfügbar sind. Gemäss \
 
 SiteImprove, ein Analysetools das gemäss Umfrage \ref{appendix:umfrage} ebenfalls von einigen Verwaltungen eingesetzt wird, hat laut Datanyze \parencite{datanyzeSwitzerlandWebanalytics} einen Marktanteil von knapp 0.1\%.
 
-\subsection{Google Analytics}
+\subsection{Google Analytics}\label{subsec:GoogleAnalytics}
 Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzten Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
 
 Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Analysetools folgende Eigenschaften auf:
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | p{12cm} |}
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
 		\hline
 		\textbf{Kriterium} & \textbf{Eigenschaft}  \\ 
 		\hline
 		Preis & Gratis \\
-		On-Premise / In-House & Nein \\
-		Daten Aktualität & < 24 Stunden \\
-		Datenvolumen & 10'000'000 Hits pro Monat\\
-		Maximale Anzahl Metriken / Dimensionen & 20\\
-		Datenerfassung und -Verwaltung & API für externe Daten, Datenimport für externe Daten und Unterstützung für Tagmanagement\\
-		Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Trichteranalyse, Benutzersegmentierung und Benutzerdefinierte Dashboards\\
-		Berichterstellung & Nutzerflussberichte, Akquisitionsberichte, Zielgruppenberichte, Werbungsberichte, Echtzeitberichte und Conversionberichte \\
-		Datenzugriff & API, Webapplikation, Mobileapplikation und E-Mails / \textit{kein zugriff auf Rohdaten!}\\
-		Sonstige Features & Trendanalyse, Verknüpfung mit Applikationen (Google Ads, AdSense und SearchConsole), Mobileapplikation-Tracking, Video-Performance Messung\\
+    \hline
+    On-Premise / In-House & Nein \\
+    \hline
+    Daten Aktualität & < 24 Stunden \\
+    \hline
+    Datenvolumen & 10'000'000 Hits pro Monat\\
+    \hline
+    Maximale Anzahl Metriken / Dimensionen & 20\\
+    \hline
+    Datenerfassung und -Verwaltung & API für externe Daten, Datenimport für externe Daten und Unterstützung für Tagmanagement\\
+    \hline
+    Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Trichteranalyse, Benutzersegmentierung und Benutzerdefinierte Dashboards\\
+    \hline
+    Berichterstellung & Nutzerflussberichte, Akquisitionsberichte, Zielgruppenberichte, Werbungsberichte, Echtzeitberichte und Conversionberichte \\
+    \hline
+    Datenzugriff & API, Webapplikation, Mobileapplikation und E-Mails / \textit{kein zugriff auf Rohdaten!}\\
+    \hline
+    Sonstige Features & Trendanalyse, Verknüpfung mit Applikationen (Google Ads, AdSense und SearchConsole), Mobileapplikation-Tracking, Video-Performance Messung\\
 		\hline  
 	\end{tabular}
 	\caption{Google Analytics - Eigenschaften \parencite {GoogleAnalyticsCompare}, \parencite{GoogleAnalyticsFeatures}}
 	\label{tab: googleAnalyticsFeatures}
 \end{table}
 
-Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität und ist trotzdem Gratis. Dies ist für viele Anwender ein Grund sich für Google Analytics zu entscheiden. Für die meisten Verwaltungen, ist der Einsatz von Google analytics aus datenschutztechnischen Gründen problematisch. Da keine On-Premise Datenverarbeitung angeboten wird, müssen die Daten zur Verarbeitung ins Ausland weitergegeben werden. Ausserdem gibt Google an, Daten zur Verarbeitung an Dritte weiterzugeben \parencite{GoogleInfoSharing}. Auch dies steht im Konflikt mit den Datenschutzgesetzen mehrerer Kantone (Vgl. Tabelle\ref{tab: ktrechtslage}). Nichts desto Trotz könnte in Kantonen in denen das Überstellen von Daten ins Ausland möglich ist, und alle rechtlichen Notwendigkeiten, wie zum Beispiel die Auftragsdatenverarbeitungsverträge erfüllt sind, Google Analytics als Analysetool eingesetzt werden. In diesem Falle gilt es zu beachten, dass dennoch einige Einstellungen am Tool vorgenommen werden müssen, um die Anonymisierung zu gewährleisten \parencite{GoogleAnalyticsDatenschutzEinstellungen}: 
+Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität und ist trotzdem Gratis. Dies ist für viele Anwender, darunter eine Verwaltung die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) teilgenommen hat, ein Grund sich für Google Analytics zu entscheiden. Für die meisten Verwaltungen, ist der Einsatz von Google analytics aus datenschutztechnischen Gründen problematisch. Da keine On-Premise Datenverarbeitung angeboten wird, müssen die Daten zur Verarbeitung ins Ausland weitergegeben werden. Ausserdem gibt Google an, Daten zur Verarbeitung an Dritte weiterzugeben \parencite{GoogleInfoSharing}. Auch dies steht im Konflikt mit den Datenschutzgesetzen mehrerer Kantone (Vgl. Tabelle\ref{tab: ktrechtslage}). Nichts desto Trotz könnte in Kantonen in denen das Überstellen von Daten ins Ausland möglich ist, und alle rechtlichen Notwendigkeiten, wie zum Beispiel die Auftragsdatenverarbeitungsverträge erfüllt sind, Google Analytics als Analysetool eingesetzt werden. In diesem Falle gilt es zu beachten, dass dennoch einige Einstellungen am Tool vorgenommen werden müssen, um die Anonymisierung zu gewährleisten \parencite{GoogleAnalyticsDatenschutzEinstellungen}: 
 
 \begin{description}
   \item[IP Adressen anonymisieren] Durch das kürzen der IP-Adressen, wird die Aussagekraft der IP-Adresse darauf reduziert, aus welcher Umgebung die Anfrage kam.
@@ -219,26 +228,46 @@ Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funk
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{ | l | p{12cm} |}
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
 		\hline
 		\textbf{Kriterium} & \textbf{Eigenschaft}  \\ 
 		\hline
-		Preis & Gratis \\
-		On-Premise / In-House & Nein \\
-		Daten Aktualität & Keine Angaben \\
+    Preis & Gratis \\
+    \hline
+    On-Premise / In-House & Nein \\
+    \hline
+    Daten Aktualität & Keine Angaben \\
+    \hline
 		Datenvolumen & Keine Angaben \\
-		Maximale Anzahl Metriken / Dimensionen & 25 \\
+    \hline
+    Maximale Anzahl Metriken / Dimensionen & 25 \\
+    \hline
 		Datenerfassung und -Verwaltung & Keine Angaben zu Importmöglichkeiten \\
-		Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Funnelanalyse, Benutzersegmentierung,  demografische Datenanalyse, Benutzerdefinierte Dashboards und Eventanalyse \\
+    \hline
+    Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Funnelanalyse, Benutzersegmentierung,  demografische Datenanalyse, Benutzerdefinierte Dashboards und Eventanalyse \\
+    \hline
     Berichterstellung & Customerjourney-Berichte, Kundenbindung, Umsatzberichte, Zielgruppenberichte, Werbungsberichte, Echtzeitberichte und Conversionberichte \\
-		Datenzugriff & API, Webapplikation und Mobileapplikation / \textit{kein zugriff auf Rohdaten!}\\
-		Sonstige Features & Automatische Insights, Perzentile-Analyse, Lookalike-Audience (Personen die dem Zielpublikum entsprechen) und Integration von Facebook Diensten (Facebook Ads, Facebook Insights) \\
+    \hline
+    Datenzugriff & API, Webapplikation und Mobileapplikation / \textit{kein zugriff auf Rohdaten!}\\
+    \hline
+    Sonstige Features & Automatische Insights, Perzentile-Analyse, Lookalike-Audience (Personen die dem Zielpublikum entsprechen) und Integration von Facebook Diensten (Facebook Ads, Facebook Insights) \\
 		\hline  
 	\end{tabular}
 	\caption{Facebook Analytics - Eigenschaften \parencite{facebookAnalyticsFeatures}, \parencite{facebookAnalyticsHelp}}
-	\label{tab: googleAnalyticsFeatures}
+	\label{tab: facebookAnalyticsFeatures}
 \end{table}
 
+Facebook Analytics, macht wie in Tabelle \ref{tab: facebookAnalyticsFeatures} ersichtlich ist, keine aussagen dazu wie gross das Volumen ist das bearbeitet werden kann. 
+
+Auch Facebook Analytics bietet einen Dienst an, der viele Funktionen hat und gratis zur Verfügung steht. Obwohl es der zweit meist verbreitete Dienst in der Schweiz ist, gab es in der Umfrage (siehe Anhang \ref{appendix:umfrage}) keine Verwaltungen die Angaben Facebook analytics zu verwenden. Facebook Analytics bietet keine On-Premise Daten Analysen an, was die Handhabung der Daten im Verwaltungskontext erschwert. Da auch dieser Dienst die Daten im Ausland verarbeitet, gelten die selben Gesetze dem auch google analytics unterliegt (siehe Kapitel \ref{subsec:GoogleAnalytics}). 
+
+Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformität zu gewährleisten: 
+
+\begin{description}
+  \item[Cookie-Zustimmung] Es kann ein oder ausgeschaltet werden, ob Benutzer der Webseite eine Zustimmung ablegen müssen ob Cookies verwendet werden dürfen.
+\end{description}
+
+Es ist ersichtlich, dass Facebook Analytics weitaus weniger Massnahmen trifft, um Datenschutzkonformität gewährleisten zu können. Dies dürfte auch der Grund sein, dass Facebook Analytics Gemäss Umfrage (siehe Anhang \ref{appendix:umfrage}) nicht von Verwaltungen verwendet wird.
 
 \subsection{Matomo}
 
