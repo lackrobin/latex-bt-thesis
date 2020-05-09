@@ -173,7 +173,72 @@ SiteImprove, ein Analysetools das gemäss Umfrage \ref{appendix:umfrage} ebenfal
 \subsection{Google Analytics}
 Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzten Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
 
+Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Analysetools folgende Eigenschaften auf:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | p{12cm} |}
+		\hline
+		\textbf{Kriterium} & \textbf{Eigenschaft}  \\ 
+		\hline
+		Preis & Gratis \\
+		On-Premise / In-House & Nein \\
+		Daten Aktualität & < 24 Stunden \\
+		Datenvolumen & 10'000'000 Hits pro Monat\\
+		Maximale Anzahl Metriken / Dimensionen & 20\\
+		Datenerfassung und -Verwaltung & API für externe Daten, Datenimport für externe Daten und Unterstützung für Tagmanagement\\
+		Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Trichteranalyse, Benutzersegmentierung und Benutzerdefinierte Dashboards\\
+		Berichterstellung & Nutzerflussberichte, Akquisitionsberichte, Zielgruppenberichte, Werbungsberichte, Echtzeitberichte und Conversionberichte \\
+		Datenzugriff & API, Webapplikation, Mobileapplikation und E-Mails / \textit{kein zugriff auf Rohdaten!}\\
+		Sonstige Features & Trendanalyse, Verknüpfung mit Applikationen (Google Ads, AdSense und SearchConsole), Mobileapplikation-Tracking, Video-Performance Messung\\
+		\hline  
+	\end{tabular}
+	\caption{Google Analytics - Eigenschaften \parencite {GoogleAnalyticsCompare}, \parencite{GoogleAnalyticsFeatures}}
+	\label{tab: googleAnalyticsFeatures}
+\end{table}
+
+Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität und ist trotzdem Gratis. Dies ist für viele Anwender ein Grund sich für Google Analytics zu entscheiden. Für die meisten Verwaltungen, ist der Einsatz von Google analytics aus datenschutztechnischen Gründen problematisch. Da keine On-Premise Datenverarbeitung angeboten wird, müssen die Daten zur Verarbeitung ins Ausland weitergegeben werden. Ausserdem gibt Google an, Daten zur Verarbeitung an Dritte weiterzugeben \parencite{GoogleInfoSharing}. Auch dies steht im Konflikt mit den Datenschutzgesetzen mehrerer Kantone (Vgl. Tabelle\ref{tab: ktrechtslage}). Nichts desto Trotz könnte in Kantonen in denen das Überstellen von Daten ins Ausland möglich ist, und alle rechtlichen Notwendigkeiten, wie zum Beispiel die Auftragsdatenverarbeitungsverträge erfüllt sind, Google Analytics als Analysetool eingesetzt werden. In diesem Falle gilt es zu beachten, dass dennoch einige Einstellungen am Tool vorgenommen werden müssen, um die Anonymisierung zu gewährleisten \parencite{GoogleAnalyticsDatenschutzEinstellungen}: 
+
+\begin{description}
+  \item[IP Adressen anonymisieren] Durch das kürzen der IP-Adressen, wird die Aussagekraft der IP-Adresse darauf reduziert, aus welcher Umgebung die Anfrage kam.
+  \item[Aufbewahrungsdauer erhobener Daten festlegen] Daten werden bei Google Analytics bis zu 14 Monaten aufbewahrt. Die Aufbewahrungsdauer kann durch Einstellungen auf 2 Monate reduziert werden, das den Standardrichtlinien zur Datenaufbewahrung von Google Analytics entspricht.
+  \item[Endnutzerdaten löschen] Auf anfrage ermöglicht es Google Analytics, Endnutzerdaten einzelner Personen zu löschen.   
+\end{description}
+
+Es ist ebenfalls wichtig zu Verstehen, welche Daten gesammelt werden, und wie die Daten von Google verwaltet werden. Durch Google Analytics erhobene Daten lassen sich folgendermassen zusammenfassen: Cookies, für die Speicherung von Webseitenaktivitäten und Client-ID werden auf dem Rechner des Benutzers angelegt. Dies erfordert eine Einwilligung des Benutzers. Die Client-ID kann, sofern dies in den Google Analytics Einstellungen nicht deaktiviert wird, als Werbe-ID verwendet werden. Die IP-Adressen werden erhoben um eine Standort Lokalisierung zu ermöglichen. Anwender von Google Analytics dürfen keine anderen Daten an Google Analytics senden, welche Personen identifizierbar machen \parencite{GoogleAnalyticsDatenschutz}.
+
+Google verspricht ausserdem, dass die Daten nur über verschlüsselte Kommunikationskanäle erfolgt, um die Datensicherheit zu gewährleisten. Durch räumlich verteilte Rechenzeter und Datenreplikation wir die Betriebssicherheit gewährleistet \parencite{GoogleAnalyticsDatenschutz}.
+
+Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die Meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. 
+
 \subsection{Facebook Analytics}
+
+Als zweit grösster Anbieter am Schweizer Markt, bietet Facebook Analytics Webanalyse als Service für ungefähr 3.5\% des Schweizer Marktes an.
+
+Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funktionen im Analysetool verfügbar:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | l | p{12cm} |}
+		\hline
+		\textbf{Kriterium} & \textbf{Eigenschaft}  \\ 
+		\hline
+		Preis & Gratis \\
+		On-Premise / In-House & Nein \\
+		Daten Aktualität & Keine Angaben \\
+		Datenvolumen & Keine Angaben \\
+		Maximale Anzahl Metriken / Dimensionen & 25 \\
+		Datenerfassung und -Verwaltung & Keine Angaben zu Importmöglichkeiten \\
+		Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Funnelanalyse, Benutzersegmentierung,  demografische Datenanalyse, Benutzerdefinierte Dashboards und Eventanalyse \\
+    Berichterstellung & Customerjourney-Berichte, Kundenbindung, Umsatzberichte, Zielgruppenberichte, Werbungsberichte, Echtzeitberichte und Conversionberichte \\
+		Datenzugriff & API, Webapplikation und Mobileapplikation / \textit{kein zugriff auf Rohdaten!}\\
+		Sonstige Features & Automatische Insights, Perzentile-Analyse, Lookalike-Audience (Personen die dem Zielpublikum entsprechen) und Integration von Facebook Diensten (Facebook Ads, Facebook Insights) \\
+		\hline  
+	\end{tabular}
+	\caption{Facebook Analytics - Eigenschaften \parencite{facebookAnalyticsFeatures}, \parencite{facebookAnalyticsHelp}}
+	\label{tab: googleAnalyticsFeatures}
+\end{table}
+
 
 \subsection{Matomo}
 
