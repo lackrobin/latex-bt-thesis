@@ -191,7 +191,7 @@ Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Ana
     \hline
     Maximale Anzahl Metriken / Dimensionen & 20\\
     \hline
-    Datenerfassung und -Verwaltung & API für externe Daten, Datenimport für externe Daten und Unterstützung für Tagmanagement\\
+    Datenerfassung und -Verwaltung &  Page Tagging, API für externe Daten, Datenimport für externe Daten und Unterstützung für Tagmanagement\\
     \hline
     Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Trichteranalyse, Benutzersegmentierung und Benutzerdefinierte Dashboards\\
     \hline
@@ -218,7 +218,7 @@ Es ist ebenfalls wichtig zu Verstehen, welche Daten gesammelt werden, und wie di
 
 Google verspricht ausserdem, dass die Daten nur über verschlüsselte Kommunikationskanäle erfolgt, um die Datensicherheit zu gewährleisten. Durch räumlich verteilte Rechenzeter und Datenreplikation wir die Betriebssicherheit gewährleistet \parencite{GoogleAnalyticsDatenschutz}.
 
-Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die Meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. 
+Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. 
 
 \subsection{Facebook Analytics}
 
@@ -242,7 +242,7 @@ Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funk
     \hline
     Maximale Anzahl Metriken / Dimensionen & 25 \\
     \hline
-		Datenerfassung und -Verwaltung & Keine Angaben zu Importmöglichkeiten \\
+		Datenerfassung und -Verwaltung &  Page Tagging \\
     \hline
     Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Funnelanalyse, Benutzersegmentierung,  demografische Datenanalyse, Benutzerdefinierte Dashboards und Eventanalyse \\
     \hline
@@ -261,7 +261,7 @@ Facebook Analytics, macht wie in Tabelle \ref{tab: facebookAnalyticsFeatures} er
 
 Auch Facebook Analytics bietet einen Dienst an, der viele Funktionen hat und gratis zur Verfügung steht. Obwohl es der zweit meist verbreitete Dienst in der Schweiz ist, gab es in der Umfrage (siehe Anhang \ref{appendix:umfrage}) keine Verwaltungen die Angaben Facebook analytics zu verwenden. Facebook Analytics bietet keine On-Premise Daten Analysen an, was die Handhabung der Daten im Verwaltungskontext erschwert. Da auch dieser Dienst die Daten im Ausland verarbeitet, gelten die selben Gesetze dem auch google analytics unterliegt (siehe Kapitel \ref{subsec:GoogleAnalytics}). 
 
-Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformität zu gewährleisten: 
+Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformität zu gewährleisten \parencite{facebookAnalyticsGDPR}: 
 
 \begin{description}
   \item[Cookie-Zustimmung] Es kann ein oder ausgeschaltet werden, ob Benutzer der Webseite eine Zustimmung ablegen müssen ob Cookies verwendet werden dürfen.
@@ -270,6 +270,60 @@ Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformitä
 Es ist ersichtlich, dass Facebook Analytics weitaus weniger Massnahmen trifft, um Datenschutzkonformität gewährleisten zu können. Dies dürfte auch der Grund sein, dass Facebook Analytics Gemäss Umfrage (siehe Anhang \ref{appendix:umfrage}) nicht von Verwaltungen verwendet wird.
 
 \subsection{Matomo}
+
+Gemäss Umfrage (Siehe Anhang \ref{appendix:umfrage}), ist Matomo bei den Verwaltungen ein beliebtes Tool. Matomo kann als Service bezogen, oder On-Premise installiert werden. In der nachfolgenden Analyse wird auf die On-Premise Variante bezogen, da sich diese besser für den Verwaltungskontext eignet.  
+
+Laut dem Hersteller weist es die folgenden Eigenschaften auf:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
+		\hline
+		\textbf{Kriterium} & \textbf{Eigenschaft}  \\ 
+		\hline
+    Preis & Gratis \\
+    \hline
+    On-Premise / In-House & Ja \\
+    \hline
+    Daten Aktualität & Echtzeit \\
+    \hline
+		Datenvolumen & Unlimitiert \\
+    \hline
+    Maximale Anzahl Metriken / Dimensionen & Keine Angaben \\
+    \hline
+		Datenerfassung und -Verwaltung & Page Tagging, Import historischer Google Analytics Daten und Import für Server Logs für Log-File-Tracking \\
+    \hline
+    Datenvisualisierung und -Analyse & Benutzerdefinierte Datenfilter, Seitengeschwindigkeitsanalyse, Benutzerprofil Analyse,  Geolokalisierung, Benutzerdefinierte Dashboards, Content-Tracking und Eventanalyse \\
+    \hline
+    Berichterstellung & Performanceberichte und Umsatzberichte \\
+    \hline
+    Datenzugriff & Zugriff auf Rohdaten, API, Webapplikation und Mobileapplikation \\
+    \hline
+    Sonstige Features & Content-Tracking, CMS-Framework Integration, Open Source, 5-Minuten On-Premise Setup und Marktplatz für zusätzliche Features \\
+		\hline  
+	\end{tabular}
+	\caption{Matomo - Eigenschaften \parencite{MamotoCloudVsOnPremise}, \parencite{MamotoFeatures}}
+	\label{tab: MatomoFeatures}
+\end{table}
+
+Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}.
+
+In erster Linie jedoch positioniert sich Matomo als das Webanalysetool, welches als oberste Priorität den Datenschutz und den Schutz der Privatsphäre der Benutzer hat \parencite{MamotoPrivacy}. Es ist eines der wenigen Tools das sowohl OpenSource ist, als auch als On-Premise Software eingesetzt werden kann. Dies hat für den Datenschutz grosse Auswirkungen, da einerseits im Quellcode nachgewiesen werden kann Welche Daten tatsächlich gesammelt werden, und andererseits die Daten zur Verarbeitung nicht weitergegeben werden müssen. Letzteres ist für Verwaltungen ein wichtiges Kriterium, um die Datenschutzkonformität gewährleisten zu können.
+
+Matomo bietet die folgenden Massnahmen, um den Datenschutz gewährleisten zu können \parencite{MamotoFeatures}, \parencite{MamotoPrivacy}:
+
+\begin{description}
+  \item[Opt-Out Mechanismus] Es wird eine Möglichkeit angeboten, Benutzern die Entscheidung darüber zu überlassen, ob sie getrackt werden dürfen.
+  \item[IP-Adressen anonymisieren] Durch kürzen der IP-Adresse, wird das Geolokalisieren der Benutzer auf eine grössere Region eingeschränkt.
+  \item[Dezentrale Datensammlung] Durch die On-Premise  Anwendung wird keine zentrale Datenhaltung generiert.
+  \item[GDPR Tools] Matomo bietet GDPR Konformität und somit das löschen von Benutzerdaten auf Anfrage.  
+  \item[Do-Not-Track] Respektiert die Do-Not-Track Einstellungen des Browsers.
+  \item[Analytics ohne Cookies] Matomo hat die Möglichkeit,Tracking komplett ohne Cookies durchzuführen.
+  \item[Einwilligung erbitten] Es wird beim Benutzer nachgefragt, ob er getrackt werden darf.
+  \item[Pseudonymisierung] Personendaten werden pseudonymisiert.  
+\end{description}
+
+Matomo bietet mit seinen grossen Bemühungen zur Datenschutzkonformität eine gute Basis für den Einsatz im Verwaltungskontext. Dass Daten die jeweilige Stelle nicht verlassen müssen, ist ein wichtiges Kriterium um in sämtlichen Kantonen sicherzustellen, dass alle Gesetze eingehalten werden (Vgl. Tabelle \ref{tab: ktrechtslage}).
 
 \subsection{SiteImprove}
 
