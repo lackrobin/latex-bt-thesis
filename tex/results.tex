@@ -189,6 +189,7 @@ Den grösste Teil der Befragten, verwendet das von i-web in das CMS integrierte 
 \subsection{Google Analytics}\label{subsec:GoogleAnalytics}
 Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzten Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
 
+\subsubsection{Funktionalitäten und Eigenschaften}
 Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Analysetools folgende Eigenschaften auf:
 
 \begin{table}[h]
@@ -222,24 +223,62 @@ Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Ana
 	\label{tab: googleAnalyticsFeatures}
 \end{table}
 
-Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität und ist trotzdem Gratis. Dies ist für viele Anwender, darunter eine Verwaltung die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) teilgenommen hat, ein Grund sich für Google Analytics zu entscheiden. Für die meisten Verwaltungen, ist der Einsatz von Google analytics aus datenschutztechnischen Gründen problematisch. Da keine On-Premise Datenverarbeitung angeboten wird, müssen die Daten zur Verarbeitung ins Ausland weitergegeben werden. Ausserdem gibt Google an, Daten zur Verarbeitung an Dritte weiterzugeben \parencite{GoogleInfoSharing}. Auch dies steht im Konflikt mit den Datenschutzgesetzen mehrerer Kantone (Vgl. Tabelle\ref{tab: ktrechtslage}). Nichts desto Trotz könnte in Kantonen in denen das Überstellen von Daten ins Ausland möglich ist, und alle rechtlichen Notwendigkeiten, wie zum Beispiel die Auftragsdatenverarbeitungsverträge erfüllt sind, Google Analytics als Analysetool eingesetzt werden. In diesem Falle gilt es zu beachten, dass dennoch einige Einstellungen am Tool vorgenommen werden müssen, um die Anonymisierung zu gewährleisten \parencite{GoogleAnalyticsDatenschutzEinstellungen}: 
+Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität, gute Visualisierungen und ist trotzdem Gratis. Dies ist für Anwender, darunter eine Verwaltung die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) teilgenommen hat, ein Grund sich für Google Analytics zu entscheiden. 
+
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
+		\hline
+    \textbf{Eigenschaften} & \textbf{Bewertung}  \\
+    \hline 
+    Understandability   & in Ordnung \\ \hline
+    Affordability  &  gut \\ \hline
+    Documentation  & gut \\ \hline
+    Installability & gut \\ \hline
+    Learnability  & in Ordnung \\ \hline
+    Identity  & mangelhaft \\  \hline
+    Community  & gut \\ \hline
+    Accessibility  & gut \\ \hline
+    Supportability & gut \\ \hline
+    Changeability  & kann nicht beantwortet werden \\ \hline
+    Datenvolumen & ausgezeichnet \\ \hline
+    Datenschutz  & in Ordnung \\ \hline
+    Datenhoheit & in Ordnung \\ \hline
+    Daten Aktualität  & in Ordnung \\ \hline
+    Datenerfassung  & kann nicht beantwortet werden \\  \hline
+    Datenvisualisierung & ausgezeichnet \\ \hline
+    Datenanalyse & gut \\ \hline
+    Datenzugriff  & kann nicht beantwortet werden \\ \hline
+    Service Integration & gut \\ \hline
+    Maximale Anzahl von Metriken und Dimensionen & gut \\ \hline
+
+	\end{tabular}
+	\caption{Google Analytics - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\label{tab: googleanalyticsfeaturebewertung}
+\end{table}
+
+\subsubsection{Datenschutz}
+Für die meisten Verwaltungen, ist der Einsatz von Google analytics aus datenschutztechnischen Gründen problematisch. Da keine On-Premise Datenverarbeitung angeboten wird, müssen die Daten zur Verarbeitung ins Ausland weitergegeben werden. Ausserdem gibt Google an, Daten zur Verarbeitung an Dritte weiterzugeben \parencite{GoogleInfoSharing}. Auch dies steht im Konflikt mit den Datenschutzgesetzen mehrerer Kantone (Vgl. Tabelle\ref{tab: ktrechtslage}). Nichts desto Trotz könnte in Kantonen in denen das Überstellen von Daten ins Ausland möglich ist, und alle rechtlichen Notwendigkeiten, wie zum Beispiel die Auftragsdatenverarbeitungsverträge erfüllt sind, Google Analytics als Analysetool eingesetzt werden. In diesem Falle gilt es zu beachten, dass dennoch einige Einstellungen am Tool vorgenommen werden müssen, um die Anonymisierung zu gewährleisten \parencite{GoogleAnalyticsDatenschutzEinstellungen}: 
 
 \begin{description}
   \item[IP Adressen anonymisieren] Durch das kürzen der IP-Adressen, wird die Aussagekraft der IP-Adresse darauf reduziert, aus welcher Umgebung die Anfrage kam.
   \item[Aufbewahrungsdauer erhobener Daten festlegen] Daten werden bei Google Analytics bis zu 14 Monaten aufbewahrt. Die Aufbewahrungsdauer kann durch Einstellungen auf 2 Monate reduziert werden, das den Standardrichtlinien zur Datenaufbewahrung von Google Analytics entspricht.
   \item[Endnutzerdaten löschen] Auf anfrage ermöglicht es Google Analytics, Endnutzerdaten einzelner Personen zu löschen.   
-\end{description}
+\end{description} 
 
 Es ist ebenfalls wichtig zu Verstehen, welche Daten gesammelt werden, und wie die Daten von Google verwaltet werden. Durch Google Analytics erhobene Daten lassen sich folgendermassen zusammenfassen: Cookies, für die Speicherung von Webseitenaktivitäten und Client-ID werden auf dem Rechner des Benutzers angelegt. Dies erfordert eine Einwilligung des Benutzers. Die Client-ID kann, sofern dies in den Google Analytics Einstellungen nicht deaktiviert wird, als Werbe-ID verwendet werden. Die IP-Adressen werden erhoben um eine Standort Lokalisierung zu ermöglichen. Anwender von Google Analytics dürfen keine anderen Daten an Google Analytics senden, welche Personen identifizierbar machen \parencite{GoogleAnalyticsDatenschutz}.
 
 Google verspricht ausserdem, dass die Daten nur über verschlüsselte Kommunikationskanäle erfolgt, um die Datensicherheit zu gewährleisten. Durch räumlich verteilte Rechenzeter und Datenreplikation wir die Betriebssicherheit gewährleistet \parencite{GoogleAnalyticsDatenschutz}.
 
+\subsubsection{Google Analytics - Fazit}
 Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. Nichts desto Trotz ergab die Umfrage (siehe Anhang \ref{appendix:umfrage}), dass zumindest auf einer Verwaltung Google Analytics eingesetzt wird. Aus den Antworten kann heraus gelesen werden, dass man sich beim Analysetool von Google eine On-Premise Option wünscht. dennoch sind die Anwender mit den Funktionalitäten des Tools zufrieden, besonders was die Visualisierungen und die Aktualität der Daten betrifft.
 
 \subsection{Facebook Analytics}
 
 Als zweit grösster Anbieter am Schweizer Markt, bietet Facebook Analytics Webanalyse als Service für ungefähr 3.5\% des Schweizer Marktes an.
 
+\subsubsection{Funktionalitäten und Eigenschaften}
 Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funktionen im Analysetool verfügbar:
 
 \begin{table}[h]
@@ -274,8 +313,10 @@ Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funk
 \end{table}
 
 Facebook Analytics, macht wie in Tabelle \ref{tab: facebookAnalyticsFeatures} ersichtlich ist, keine aussagen dazu wie gross das Volumen ist das bearbeitet werden kann. 
+Auch Facebook Analytics bietet einen Dienst an, der viele Funktionen hat und gratis zur Verfügung steht. 
 
-Auch Facebook Analytics bietet einen Dienst an, der viele Funktionen hat und gratis zur Verfügung steht. Obwohl es der zweit meist verbreitete Dienst in der Schweiz ist, gab es in der Umfrage (siehe Anhang \ref{appendix:umfrage}) keine Verwaltungen die Angaben Facebook analytics zu verwenden. Facebook Analytics bietet keine On-Premise Daten Analysen an, was die Handhabung der Daten im Verwaltungskontext erschwert. Da auch dieser Dienst die Daten im Ausland verarbeitet, gelten die selben Gesetze dem auch google analytics unterliegt (siehe Kapitel \ref{subsec:GoogleAnalytics}). 
+\subsubsection{Datenschutz}
+Obwohl es der zweit meist verbreitete Dienst in der Schweiz ist, gab es in der Umfrage (siehe Anhang \ref{appendix:umfrage}) keine Verwaltungen die Angaben Facebook analytics zu verwenden. Facebook Analytics bietet keine On-Premise Daten Analysen an, was die Handhabung der Daten im Verwaltungskontext erschwert. Da auch dieser Dienst die Daten im Ausland verarbeitet, gelten die selben Gesetze dem auch google analytics unterliegt (siehe Kapitel \ref{subsec:GoogleAnalytics}). 
 
 Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformität zu gewährleisten \parencite{facebookAnalyticsGDPR}: 
 
@@ -283,12 +324,14 @@ Facebook Analytics bietet nur die Folgenden Massnahme, um Datenschutzkonformitä
   \item[Cookie-Zustimmung] Es kann ein oder ausgeschaltet werden, ob Benutzer der Webseite eine Zustimmung ablegen müssen ob Cookies verwendet werden dürfen.
 \end{description}
 
+\subsubsection{Facebook Analytics - Fazit}
 Es ist ersichtlich, dass Facebook Analytics weitaus weniger Massnahmen trifft, um Datenschutzkonformität gewährleisten zu können. Dies dürfte auch der Grund sein, dass Facebook Analytics Gemäss Umfrage (siehe Anhang \ref{appendix:umfrage}) nicht von Verwaltungen verwendet wird.
 
 \subsection{Matomo}
 
 Gemäss Umfrage (Siehe Anhang \ref{appendix:umfrage}), ist Matomo bei den Verwaltungen ein beliebtes Tool. Matomo kann als Service bezogen, oder On-Premise installiert werden. In der nachfolgenden Analyse wird auf die On-Premise Variante bezogen, da sich diese besser für den Verwaltungskontext eignet.  
 
+\subsubsection{Funktionalitäten und Eigenschaften}
 Laut dem Hersteller weist es die folgenden Eigenschaften auf:
 
 \begin{table}[h]
@@ -322,10 +365,46 @@ Laut dem Hersteller weist es die folgenden Eigenschaften auf:
 	\label{tab: MatomoFeatures}
 \end{table}
 
-Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}. Gemäss Matomo Anwendern die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) beteiligt waren, liegen die Stärken von Matomo darin, dass die Daten aktuell sind und die Analyse- und Visualierungstools gut sind. 
+Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}. 
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
+		\hline
+    \textbf{Eigenschaften} & \textbf{Bewertung}  \\
+    \hline 
+    Understandability   & gut \\ \hline
+    Affordability  &  ausgezeichnet \\ \hline
+    Documentation  & in Ordnung \\ \hline
+    Installability & ausgezeichnet \\ \hline
+    Learnability  & in Ordnung \\ \hline
+    Identity  & ausgezeichnet \\  \hline
+    Community  & gut \\ \hline
+    Accessibility  & ausgezeichnet \\ \hline
+    Supportability & in Ordnung \\ \hline
+    Changeability  & mangelhaft \\ \hline
+    Datenvolumen & gut \\ \hline
+    Datenschutz  & gut \\ \hline
+    Datenhoheit & ausgezeichnet \\ \hline
+    Daten Aktualität  & ausgezeichnet \\ \hline
+    Datenerfassung  & kann nicht beantwortet werden \\  \hline
+    Datenvisualisierung & gut \\ \hline
+    Datenanalyse & gut \\ \hline
+    Datenzugriff  & kann nicht beantwortet werden \\ \hline
+    Service Integration & kann nicht beantwortet werden \\ \hline
+    Maximale Anzahl von Metriken und Dimensionen & gut \\ \hline
+
+	\end{tabular}
+	\caption{Matomo - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\label{tab: matomofeaturebewertung}
+\end{table}
+
+
+Gemäss Matomo Anwendern die an der Umfrage (siehe Tabelle \ref{tab: matomofeaturebewertung}) beteiligt waren, liegen die Stärken von Matomo darin, dass die Daten aktuell sind und die Analyse- und Visualierungstools gut sind. 
 Auch positiv fiel das Feedback über die Installation des Tools aus, obwohl es als On-Premise Anwendung wohl eine kompliziertere Installation als andere Tools aufweisen dürfte.
 Verbesserungspotential besteht bei der Dokumentation, der Erlernbarkeit der Funktionen des Tools, sowie beim Support zum Tool. Auch das anpassen von Funktionen am Tool wird als schwierig eingestuft.
 
+\subsubsection{Datenschutz}
 In erster Linie jedoch positioniert sich Matomo als das Webanalysetool, welches als oberste Priorität den Datenschutz und den Schutz der Privatsphäre der Benutzer hat \parencite{MamotoPrivacy}. Es ist eines der wenigen Tools das sowohl OpenSource ist, als auch als On-Premise Software eingesetzt werden kann. Dies hat für den Datenschutz grosse Auswirkungen, da einerseits im Quellcode nachgewiesen werden kann Welche Daten tatsächlich gesammelt werden, und andererseits die Daten zur Verarbeitung nicht weitergegeben werden müssen. Letzteres ist für Verwaltungen ein wichtiges Kriterium, um die Datenschutzkonformität gewährleisten zu können.
 
 Matomo bietet die folgenden Massnahmen, um den Datenschutz gewährleisten zu können \parencite{MamotoFeatures}, \parencite{MamotoPrivacy}:
@@ -341,6 +420,7 @@ Matomo bietet die folgenden Massnahmen, um den Datenschutz gewährleisten zu kö
   \item[Pseudonymisierung] Personendaten werden pseudonymisiert.  
 \end{description}
 
+\subsubsection{Matomo - Fazit}
 Matomo bietet mit seinen grossen Bemühungen zur Datenschutzkonformität eine gute Basis für den Einsatz im Verwaltungskontext. Dass Daten die jeweilige Stelle nicht verlassen müssen, ist ein wichtiges Kriterium um in sämtlichen Kantonen sicherzustellen, dass alle Gesetze eingehalten werden (Vgl. Tabelle \ref{tab: ktrechtslage}). Dies widerspiegelt auch die Umfrage (siehe Anhang \ref{appendix:umfrage}). Bei den Befragten waren die Kriterien, die zur Auswahl von Matomo als Analysetool führten, das In-House-Hosting der Daten, die Konformität mit den Datenschutzgesetzen und auch die Gegebenheit, dass Matomo eine OpenSource-Lösung ist.  
 
 \subsection{i-CMS}
@@ -355,13 +435,6 @@ Bei i-CMS handelt es sich an sich nicht um ein Webanalysetool, sondern um ein Pr
 \end{figure}
 
 Diese Modularität ermöglicht es ein breites Spektrum an Kunden zu bedienen, wobei das Angebot immer auf den Kunden zugeschnitten bleibt. Dabei liegt der Fokus der Zielgruppe auf Verwaltungen und Vereinen. Es lassen sich Module für Städte, Gemeinden sowie Kantone einbinden. Beispielsweise beim Modul KantonWeb stehen zusätzlich zu den üblichen CMS-Funktionen ebenfalls Kantonsspezifische Module wie zum Beispiel die kantonale Rechtspflege eingebunden werden \parencite{iwebwebsiteKanotonWeb}. Dies macht die i-CMS-Plattform zu einer attraktiven Lösung für den Webauftritt jeglicher Verwaltungen. 
-
-I-web gibt auf ihrer Webseite \parencite{iwebwebsiteKanotonWeb} an, dass i-CMS und sämtliche Erweiterungsmodule Datenschutz konform sind. Dies wird dadurch erreicht, dass alle Webseiten die das i-CMS verwenden eine Einwilligung durch den Benutzer erfordern, die Datenschutzbestimmungen zu akzeptieren. Wie auf der Abbildung \ref{fig: urweb} zu sehen ist, geschieht die Einwilligung durch einen Knopfdruck auf "Ja" zu der Frage: "Dürfen wir Ihre anonymisierten Daten verwenden?". Es werden weitere Massnahmen unternommen, die Daten der Benutzer so gut wie möglich zu schützen. Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteCMS} ausschliesslich in der Schweiz statt (siehe auch Abbildung \ref{fig: urweb}) und werden anonymisiert gehalten. Es können aus den gesammelten Daten der Statistik also keine Rückschlüsse auf einzelne Personen gezogen werden. 
-
-Dies wird auch durch den Hersteller bestätigt. Gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}), gewährleistet das Analysetool des i-CMS den Datenschutz folgendermassen:
-\begin{quote}
-  "Die Datenschutzkonformität der Datensammlung wird sichergestellt durch Anonymisierung und “Einwilligungs-Knopf"
-\end{quote}
 
 \begin{figure}[h]
   \centering
@@ -402,13 +475,55 @@ Als es in den Beiden Jahren 2017 und 2018 danach aussah, als würde sich i-CMS a
   \label{fig:icmszuwachs}
 \end{figure}
 
-Das Analysetool des i-CMS bietet gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}) die Folgenden Funktionalitäten an:
+\subsubsection{Funktionalitäten und Eigenschaften}
+Der Hersteller von i-CMS gibt auf der Webseite keine Informationen dazu preis, welche Funktionen das Tool bietet. Jedoch sind einige Eingenschaften auf anfrage genannt worden. Das Analysetool des i-CMS bietet gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}) die Folgenden Funktionalitäten an:
 
 \begin{quote}
   Die integrierte Business-Statistik zeichnet die Zugriffe eindeutiger Benutzer/-innen pro Modul auf (meistbesuchte Module und meistbesuchte Objekte pro Modul).. Auch detaillierte Informationen zum Benutzerverhalten (Herkunft, Suchbegriffe, Nutzung eGov-Applikationen usw.) werden aufgezeichnet. Dazu kommen Informationen zur Infrastruktur (Geräte und Betriebssysteme), Loyalität (Aufenthaltsdauer, Anzahl besuchte Seiten) usw. 
 \end{quote}
 
-I-CMS zeigt sich als gutes Tool für Verwaltungen, da es durch seine Komplettlösung alle Bedürfnisse bis hin zur Webanalyse abdeckt. Auch für die Datenschutzkonformität ist gesorgt. 
+Verwaltungen die i-CMS einsetzen, bewerten die Funktionen des integrierten Analysetools wie dies in Tabelle \ref{tab: icmsfeaturebewertung} dargestellt ist. 
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{ | p{4cm} | p{10cm} |}
+		\hline
+    \textbf{Eigenschaften} & \textbf{Bewertung}  \\
+    \hline 
+    Understandability   & in Ordnung \\ \hline
+    Affordability  &  kann nicht beantwortet werden \\ \hline
+    Documentation  & gut \\ \hline
+    Installability & in Ordnung \\ \hline
+    Learnability  & in Ordnung \\ \hline
+    Identity  & kann nicht beantwortet werden \\  \hline
+    Community  & mangelhaft \\ \hline
+    Accessibility  & ausgezeichnet \\ \hline
+    Supportability & mangelhaft \\ \hline
+    Changeability  & kann nicht beantwortet werden \\ \hline
+    Datenvolumen & gut \\ \hline
+    Datenschutz  & in Ordnung \\ \hline
+    Datenhoheit & ausgezeichnet \\ \hline
+    Daten Aktualität  & gut \\ \hline
+    Datenerfassung  & gut \\  \hline
+    Datenvisualisierung & gut \\ \hline
+    Datenanalyse & gut \\ \hline
+    Datenzugriff  & gut \\ \hline
+    Service Integration & kann nicht beantwortet werden \\ \hline
+    Maximale Anzahl von Metriken und Dimensionen & ausgezeichnet \\ \hline
+
+	\end{tabular}
+	\caption{i-CMS Webanalysetool - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\label{tab: icmsfeaturebewertung}
+\end{table}
+
+\subsubsection{Datenschutz}
+Innovative Web AG gibt auf ihrer Webseite \parencite{iwebwebsiteKanotonWeb} an, dass i-CMS und sämtliche Erweiterungsmodule Datenschutz konform sind. Dies wird dadurch erreicht, dass alle Webseiten die das i-CMS verwenden eine Einwilligung durch den Benutzer erfordern, die Datenschutzbestimmungen zu akzeptieren. Wie auf der Abbildung \ref{fig: urweb} zu sehen ist, geschieht die Einwilligung durch einen Knopfdruck auf "Ja" zu der Frage: "Dürfen wir Ihre anonymisierten Daten verwenden?". Es werden weitere Massnahmen unternommen, die Daten der Benutzer so gut wie möglich zu schützen. Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteCMS} ausschliesslich in der Schweiz statt (siehe auch Abbildung \ref{fig: urweb}) und werden anonymisiert gehalten. Es können aus den gesammelten Daten der Statistik also keine Rückschlüsse auf einzelne Personen gezogen werden. Dies wird durch den Hersteller bestätigt. Gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}), gewährleistet das Analysetool des i-CMS den Datenschutz folgendermassen:
+\begin{quote}
+  "Die Datenschutzkonformität der Datensammlung wird sichergestellt durch Anonymisierung und “Einwilligungs-Knopf"
+\end{quote}
+
+\subsubsection{i-CMS - Fazit}
+I-CMS zeigt sich als gutes Tool für Verwaltungen, da es durch seine Komplettlösung alle Bedürfnisse bis hin zur Webanalyse abdeckt. Auch für die Datenschutzkonformität ist gesorgt, was der Verwaltung eine grosse Erleichterung bring. Speziell für kleinere Verwaltungen, wie Gemeinde- oder Stadtverwaltungen, bietet i-CMS eine kompakte Lösung, welche die Suche nach einem Analysetool erübrigt. 
 
 \subsection{Erwähnenswerte Tools}
 
