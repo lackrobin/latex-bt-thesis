@@ -85,12 +85,12 @@ Folgende Strategien gelten als Standard für die Datenschutzkonformität \parenc
 \begin{description}
   \item[Anonymisierung] Daten lassen keine Rückschlüsse auf die betroffenen Personen zu. Dazu gehört auch das kürzen der IP-Adresse, was nicht in machen Analyse-Tools eingestellt werden muss \parencite[S. 3]{EcommerceUndDatenschutz}.
   \item[In-House Datenverarbeitung] Dies ist eine Funktion, welche nicht jedes Tool zur Verfügung stell. Zudem erfordert die In-House Datenverarbeitung zusätzliches Know-How, da ein Service für die Datenverarbeitung installiert und betrieben werden muss \parencite[S. 175]{nakatani2011toolselectionmethod}. 
-  \item[Abschluss eines Vertrages über Datenverarbeitung mit dem Tracking-Service Provider] Wenn es das Gesetz vorschreibt, das die Weitergabe von Daten Vertraglich geregelt werden muss, wird dies von grossen Service Provider wie zum Beispiel Google Analytics angeboten. Google bietet Musterverträge für Auftragsdatenverarbeitung an \parencite[S. 5]{EcommerceUndDatenschutz}. 
+  \item[Datenverarbeitungsvertrag mit dem Tracking-Service Provider] Wenn es das Gesetz vorschreibt, das die Weitergabe von Daten Vertraglich geregelt werden muss, wird dies von grossen Service Provider wie zum Beispiel Google Analytics angeboten. Google bietet Musterverträge für Auftragsdatenverarbeitung an \parencite[S. 5]{EcommerceUndDatenschutz}. 
   \item[Explizite Einwilligung durch Benutzer] Die Benutzer werden durch diese Massnahme erst getrackt, wenn sie explizit einwilligen. Um rechtlich Gültig zu sein, muss die Einwilligung informiert und freiwillig erfolgen. Das explizite Einwilligen kann erfordert oder erbittet werden. Wird es erfordert, kann der Dienst nur verwendet werden, wenn eingewilligt wird. Der Vorteil dieser Methode ist es, dass die Daten die erhoben werden komplett sind. Der Nachteil jedoch, dass einige Benutzer den Dienst meiden werden. wird die Einwilligung erbittet, kann der Dienst genutzt werden, ohne das Tracking aktiv ist. Hierbei ist der Vorteil, dass durch die Massnahme kein Traffic verloren geht. Der Nachteil wiederum ist, dass sich die Statistik verfälschen wird. \parencite[S. 2-3]{EcommerceUndDatenschutz}.
   \item[Opt-Out] Anders als bei der Expliziten Einwilligung, erfordert diese Massnahme aktives Engagement durch den Besucher. Er wird beim aufrufen der Webseite getrackt und es ist in der Verantwortung des Besuchers das Tracking unterbinden zu lassen. Diese Methode ist aus Datenschutzsicht mangelhaft \parencite[§§ 9 Abs. 4]{DSSGBERN}, kann aber dennoch für Benutzer interessant sein um sich vor Tracking zu schützen.
 \end{description}
 
-
+\newpage
 \section{Typen von Webanalyse}
 
 Webanalyse lässt sich aufgrund von verschiedenen Charakteristiken Gruppieren \parencite[S. 172-174]{nakatani2011toolselectionmethod}.
@@ -144,31 +144,47 @@ Page Tagging ist die Sammlung der Daten von Webseitenbesucher durch ein JavaScri
 
 Die Umfrage (Anhang \ref{appendix:umfrage}) hat ergeben, dass 100\% der Befragten, die Webanalyse betreiben, ein Webanalysetool einsetzen, welches die Methode des Page Tagging verwendet.
 
+\newpage
 \section{Marktangebot - Webanalysetools}
-Es gibt eine riesige Menge an Tools die auf dem Markt verfügbar sind. Gemäss \parencite{datanyzeSwitzerlandWebanalytics}, sind in der Schweiz 129 verschiedene Webanalysetools im Einsatz. Dabei macht Google Analytics mit Abstand den grössten Teil aus. Über 70\% des Marktes verwendet Google Analytics (GA). Obwohl es in der Umfrage (siehe Anhang \ref{appendix:umfrage}) nicht erschien, ist mit nur knapp 3.5\% ist Facebook Analytics (FA) der zweit grösste Anbieter am Markt. Matomo (M) Ist der am Schweizer Markt dritt grösste Anbieter. Matomos Marktanteil beträgt 2.8\%. Hotjars (J) Marktanteil ist 1.2\%, während sich Monster Insights (MI) Marktanteil auf 0.9\% beläuft. 
+Es gibt eine riesige Menge an Tools die auf dem Markt verfügbar sind. Gemäss \parencite{datanyzeSwitzerlandWebanalytics}, sind in der Schweiz 129 verschiedene Webanalysetools im Einsatz. Dabei macht Google Analytics mit Abstand den grössten Teil aus. 82.78\% des Marktes verwendet Google Analytics . Mit nur 3.48\% ist Facebook Analytics der zweit grösste Anbieter am Markt. Matomo Ist der am Schweizer Markt dritt grösste Anbieter. Matomos Marktanteil beträgt 2.8\%. Hotjars Marktanteil ist 1.2\%, während sich Monster Insights Marktanteil auf 0.9\% beläuft. 
 
 \begin{figure}[h]
   \centering
-  \begin{tikzpicture}  
-    \begin{axis}  
-    [  
-        ybar,  
-        enlargelimits=0.15,  
-        ylabel={Marktanteil in Prozent}, % the ylabel must precede a # symbol.  
-        xlabel={Webanalysetool},  
-        symbolic x coords={GA, FA, M, H, MI}, % these are the specification of coordinates on the x-axis.  
-        xtick=data,  
-         nodes near coords, % this command is used to mention the y-axis points on the top of the particular bar.  
-        nodes near coords align={vertical},  
-        ]  
-    \addplot coordinates {(GA,70) (FA,3.5) (M,2.8) (H,1.2) (MI,0.9)};  
-    \end{axis}  
-    \end{tikzpicture}  
-  \caption{Marktanteile der Webanalysetools in der Schweiz \parencite{datanyzeSwitzerlandWebanalytics}}
-  \label{fig:marktanteil}
+\begin{tikzpicture}
+\pie[] {
+82.78/ Google Analytics,
+3.48/ Facebook Analytics,
+2.78/ Matomo,
+1.27/ HotJar,
+8.77/ Andere,
+0.92/ MonsterInsights
+}
+\end{tikzpicture}
+\caption{Marktanteile der Top-5 Webanalysetools in der Schweiz \parencite{datanyzeSwitzerlandWebanalytics}}
+\label{fig:marktanteil}
 \end{figure}
 
-SiteImprove, ein Analysetools das gemäss Umfrage \ref{appendix:umfrage} ebenfalls von einigen Verwaltungen eingesetzt wird, hat laut Datanyze \parencite{datanyzeSwitzerlandWebanalytics} einen Marktanteil von knapp 0.1\%.
+
+Anders als beim kompletten Schweizer Markt, wurden in der Umfrage (siehe Anhang \ref{appendix:umfrage}) lediglich Verwaltungen befragt. Dementsprechend sah die Verteilung der eingesetzten Tools, dargestellt in Abbildung \ref{fig:verwVerteilungTools}, anders aus.
+
+\begin{figure}[h]
+  \centering
+\begin{tikzpicture}
+\pie[] {
+39.1/ i-web,
+4.3/ Google Analytics,
+8.7/ CMS integriert,
+21.7/ Matomo,
+4.3/ Ryte,
+8.7/ SiteImprove,
+13.2/ keine Angaben}
+\end{tikzpicture}
+\caption{(N=23) Verwendung von Analysetools in Verwaltungen Gem. Umfrage (Siehe Anhang \ref{appendix:umfrage})}
+\label{fig:verwVerteilungTools}
+\end{figure}
+
+Den grösste Teil der Befragten, verwendet das von i-web in das CMS integrierte Analysetool oder Matomo. Vereinzelt werden die Tools Google Analytics, Ryte und SiteImprove verwendet. Auch gibt es Anwender die angaben, dass sie ein in das CMS integriertes Tool verwenden. 
+
 
 \subsection{Google Analytics}\label{subsec:GoogleAnalytics}
 Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzten Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
@@ -218,7 +234,7 @@ Es ist ebenfalls wichtig zu Verstehen, welche Daten gesammelt werden, und wie di
 
 Google verspricht ausserdem, dass die Daten nur über verschlüsselte Kommunikationskanäle erfolgt, um die Datensicherheit zu gewährleisten. Durch räumlich verteilte Rechenzeter und Datenreplikation wir die Betriebssicherheit gewährleistet \parencite{GoogleAnalyticsDatenschutz}.
 
-Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. 
+Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. Nichts desto Trotz ergab die Umfrage (siehe Anhang \ref{appendix:umfrage}), dass zumindest auf einer Verwaltung Google Analytics eingesetzt wird. Aus den Antworten kann heraus gelesen werden, dass man sich beim Analysetool von Google eine On-Premise Option wünscht. dennoch sind die Anwender mit den Funktionalitäten des Tools zufrieden, besonders was die Visualisierungen und die Aktualität der Daten betrifft.
 
 \subsection{Facebook Analytics}
 
@@ -306,7 +322,9 @@ Laut dem Hersteller weist es die folgenden Eigenschaften auf:
 	\label{tab: MatomoFeatures}
 \end{table}
 
-Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}.
+Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}. Gemäss Matomo Anwendern die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) beteiligt waren, liegen die Stärken von Matomo darin, dass die Daten aktuell sind und die Analyse- und Visualierungstools gut sind. 
+Auch positiv fiel das Feedback über die Installation des Tools aus, obwohl es als On-Premise Anwendung wohl eine kompliziertere Installation als andere Tools aufweisen dürfte.
+Verbesserungspotential besteht bei der Dokumentation, der Erlernbarkeit der Funktionen des Tools, sowie beim Support zum Tool. Auch das anpassen von Funktionen am Tool wird als schwierig eingestuft.
 
 In erster Linie jedoch positioniert sich Matomo als das Webanalysetool, welches als oberste Priorität den Datenschutz und den Schutz der Privatsphäre der Benutzer hat \parencite{MamotoPrivacy}. Es ist eines der wenigen Tools das sowohl OpenSource ist, als auch als On-Premise Software eingesetzt werden kann. Dies hat für den Datenschutz grosse Auswirkungen, da einerseits im Quellcode nachgewiesen werden kann Welche Daten tatsächlich gesammelt werden, und andererseits die Daten zur Verarbeitung nicht weitergegeben werden müssen. Letzteres ist für Verwaltungen ein wichtiges Kriterium, um die Datenschutzkonformität gewährleisten zu können.
 
@@ -323,9 +341,7 @@ Matomo bietet die folgenden Massnahmen, um den Datenschutz gewährleisten zu kö
   \item[Pseudonymisierung] Personendaten werden pseudonymisiert.  
 \end{description}
 
-Matomo bietet mit seinen grossen Bemühungen zur Datenschutzkonformität eine gute Basis für den Einsatz im Verwaltungskontext. Dass Daten die jeweilige Stelle nicht verlassen müssen, ist ein wichtiges Kriterium um in sämtlichen Kantonen sicherzustellen, dass alle Gesetze eingehalten werden (Vgl. Tabelle \ref{tab: ktrechtslage}).
-
-\subsection{SiteImprove}
+Matomo bietet mit seinen grossen Bemühungen zur Datenschutzkonformität eine gute Basis für den Einsatz im Verwaltungskontext. Dass Daten die jeweilige Stelle nicht verlassen müssen, ist ein wichtiges Kriterium um in sämtlichen Kantonen sicherzustellen, dass alle Gesetze eingehalten werden (Vgl. Tabelle \ref{tab: ktrechtslage}). Dies widerspiegelt auch die Umfrage (siehe Anhang \ref{appendix:umfrage}). Bei den Befragten waren die Kriterien, die zur Auswahl von Matomo als Analysetool führten, das In-House-Hosting der Daten, die Konformität mit den Datenschutzgesetzen und auch die Gegebenheit, dass Matomo eine OpenSource-Lösung ist.  
 
 \subsection{i-CMS}
 Bei i-CMS handelt es sich an sich nicht um ein Webanalysetool, sondern um ein Produkt-Paket der Firma Innovative Web AG. Es ist ein Webauftritt-Paket, Welches sowohl die Grundfunktionalitäten eines CMS, als auch Web- und Businesstatistik zur Verfügung stellt\parencite{iwebwebsiteCMS}. Wie die Grafik \ref{fig: icms} zeigt, kann spezifische Module das Tool auf Wunsch des Kunden erweitert werden.
@@ -341,6 +357,11 @@ Bei i-CMS handelt es sich an sich nicht um ein Webanalysetool, sondern um ein Pr
 Diese Modularität ermöglicht es ein breites Spektrum an Kunden zu bedienen, wobei das Angebot immer auf den Kunden zugeschnitten bleibt. Dabei liegt der Fokus der Zielgruppe auf Verwaltungen und Vereinen. Es lassen sich Module für Städte, Gemeinden sowie Kantone einbinden. Beispielsweise beim Modul KantonWeb stehen zusätzlich zu den üblichen CMS-Funktionen ebenfalls Kantonsspezifische Module wie zum Beispiel die kantonale Rechtspflege eingebunden werden \parencite{iwebwebsiteKanotonWeb}. Dies macht die i-CMS-Plattform zu einer attraktiven Lösung für den Webauftritt jeglicher Verwaltungen. 
 
 I-web gibt auf ihrer Webseite \parencite{iwebwebsiteKanotonWeb} an, dass i-CMS und sämtliche Erweiterungsmodule Datenschutz konform sind. Dies wird dadurch erreicht, dass alle Webseiten die das i-CMS verwenden eine Einwilligung durch den Benutzer erfordern, die Datenschutzbestimmungen zu akzeptieren. Wie auf der Abbildung \ref{fig: urweb} zu sehen ist, geschieht die Einwilligung durch einen Knopfdruck auf "Ja" zu der Frage: "Dürfen wir Ihre anonymisierten Daten verwenden?". Es werden weitere Massnahmen unternommen, die Daten der Benutzer so gut wie möglich zu schützen. Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteCMS} ausschliesslich in der Schweiz statt (siehe auch Abbildung \ref{fig: urweb}) und werden anonymisiert gehalten. Es können aus den gesammelten Daten der Statistik also keine Rückschlüsse auf einzelne Personen gezogen werden. 
+
+Dies wird auch durch den Hersteller bestätigt. Gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}), gewährleistet das Analysetool des i-CMS den Datenschutz folgendermassen:
+\begin{quote}
+  "Die Datenschutzkonformität der Datensammlung wird sichergestellt durch Anonymisierung und “Einwilligungs-Knopf"
+\end{quote}
 
 \begin{figure}[h]
   \centering
@@ -359,8 +380,6 @@ I-CMS wird von einigen Gemeinde-, Stadt- und Kantonsverwaltungen eingesetzt. In 
 \end{figure}
 
 Als es in den Beiden Jahren 2017 und 2018 danach aussah, als würde sich i-CMS am Markt verdrängen lassen, kam i-CMS mit einem Starken Jahr zurück (siehe Grafik \ref{fig:icmszuwachs}). Dies lässt darauf schliessen, dass die Popularität von i-CMS bei den Verwaltungen nicht nachgelassen hat.
-
-% TODO aussagen zum Webanalysetool von I-CMS
 
 \begin{figure}[h]
   \centering
@@ -383,7 +402,19 @@ Als es in den Beiden Jahren 2017 und 2018 danach aussah, als würde sich i-CMS a
   \label{fig:icmszuwachs}
 \end{figure}
 
+Das Analysetool des i-CMS bietet gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}) die Folgenden Funktionalitäten an:
+
+\begin{quote}
+  Die integrierte Business-Statistik zeichnet die Zugriffe eindeutiger Benutzer/-innen pro Modul auf (meistbesuchte Module und meistbesuchte Objekte pro Modul).. Auch detaillierte Informationen zum Benutzerverhalten (Herkunft, Suchbegriffe, Nutzung eGov-Applikationen usw.) werden aufgezeichnet. Dazu kommen Informationen zur Infrastruktur (Geräte und Betriebssysteme), Loyalität (Aufenthaltsdauer, Anzahl besuchte Seiten) usw. 
+\end{quote}
+
+I-CMS zeigt sich als gutes Tool für Verwaltungen, da es durch seine Komplettlösung alle Bedürfnisse bis hin zur Webanalyse abdeckt. Auch für die Datenschutzkonformität ist gesorgt. 
+
 \subsection{Erwähnenswerte Tools}
+
+\subsubsection{Ryte}
+
+\subsubsection{SiteImprove}
 
 \section{Vorgehen bei der Tool-Auswahl}
 
