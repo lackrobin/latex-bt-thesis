@@ -74,7 +74,7 @@ In der unten stehenden Tabelle \ref{tab: ktrechtslage} ist veranschaulicht, welc
 	\end{longtable}
 
   Wie aus der Tabelle \ref{tab: ktrechtslage} entnommen werden kann,
-  legt ein Grossteil der Kantone fest, dass für Statistiken Personendaten verwendet werden dürfen, sofern diese anonymisiert sind und aus den Ergebnissen keine Rückschlüsse auf betroffenen Personen möglich sind. In wenigen fällen ist geregelt, dass die Weitergabe der Daten zur Verarbeitung eingeschränkt ist. Für die Webanalysetools ist dies ein wichtiger Punkt. Die Verarbeitung der Daten findet bei den meisten Analysetools, die als SaaS oder ASP angeboten werden, auf zentralen Servern im Ausland statt. Nur wenn die Webanalyse In-House betrieben wird, kann davon ausgegangen werden, dass Daten nicht zur Verarbeitung weitergegeben werden \parencite[S 174-176]{nakatani2011toolselectionmethod}.
+  legt ein Grossteil der Kantone fest, dass für Statistiken Personendaten verwendet werden dürfen, sofern diese anonymisiert sind und aus den Ergebnissen keine Rückschlüsse auf betroffenen Personen möglich sind. In wenigen fällen ist geregelt, dass auch die Weitergabe zur Verarbeitung der anonymisierten Daten eingeschränkt ist. Für die Webanalysetools ist dies ein wichtiger Punkt. Die Verarbeitung der Daten findet bei den meisten Analysetools, die als SaaS oder ASP angeboten werden, auf zentralen Servern im Ausland statt. Nur wenn die Webanalyse In-House betrieben wird, kann davon ausgegangen werden, dass Daten nicht zur Verarbeitung weitergegeben werden \parencite[S 174-176]{nakatani2011toolselectionmethod}.
 
 
 \subsection{Strategien zur Datenschutzkonformität}
@@ -102,7 +102,7 @@ Webanalyse lässt sich aufgrund von verschiedenen Charakteristiken Gruppieren \p
   \item[Datenverfügbarkeit und Geschwindigkeit] Bezieht sich auf die Unterschiede in der Geschwindigkeit beim Bereitstellen der aufgezeichneten Daten. Einige Tools ermöglichen Analysen in Echtzeit, während andere Minuten bis zu Stunden brauchen um die Daten aufzubereiten.
 \end{description}
 
-Anhand der Gruppierung auf Basis der Methode der Datensammlung lässt sich ein guter Überblick an Tools auf dem Markt schaffen. Die Datensammlung lässt sich im wesentlichen auf vier verschiedene Arten durchführen, wobei Transaktionsloganalyse und Page Tagging als die am häufigsten eingesetzten Tools gelten \parencite{nakatani2011toolselectionmethod}.
+Anhand der Gruppierung auf Basis der Methode der Datensammlung lässt sich ein guter Überblick an Tools auf dem Markt schaffen. Die Datensammlung lässt sich im wesentlichen auf vier verschiedene Arten durchführen, wobei Transaktionsloganalyse und Page Tagging als die am häufigsten eingesetzten Tools gelten. In den letzten Jahren jedoch, gewann die Page Tagging Methode deutlich an Popularität, während Log Analyse immer weniger häufig eingesetzt wird. \parencite{nakatani2011toolselectionmethod}.
 
 \subsection{Web Beacon} 
 Bei Web Beacons handelt es sich um kleine Bilddateien, welche sich auf einer Webseite eingefügt werden können und per Request angefordert werden \parencite[S. 173]{nakatani2011toolselectionmethod}. Web Beacons werden in der Praxis nur noch selten eingesetzt. Sie Werden hauptsächlich dafür verwendet, Kundenverhalten über mehrere Webseiten hinweg zu verfolgen. Eine der Häufigsten Applikationen ist das Bewerten der Leistung von Bannerwerbung. Für einfache Webanalyse wird diese Methode eher selten verwendet \parencite[S. 3]{waisberg2009webShort}.
@@ -133,7 +133,11 @@ Ausserdem bietet Transaktionsloganalyse gegenüber den anderen Methoden die folg
 
 
 \subsection{Page Tagging} 
-Page Tagging ist die Sammlung der Daten von Webseitenbesucher durch ein JavaScript-File auf jeder Webseite. Dieses JavaScript-File zeichnet das Verhalten des Seitenbesuchers auf, und sendet die Informationen an einen zentralen Datensammlungsserver \parencite[S. 173]{nakatani2011toolselectionmethod}. PageTagging ermöglichte es, im Gegensatz zu Transaktionsloganalyse, detaillierter Daten aufzuzeichnen. Da das JavaScript-Programm lokal auf dem Computer des Webseitenbesuchers ausgeführt wird, ist die Art der Daten die gesammelt werden können beinahe unbegrenzt. Durch das Modifizieren des JavaScript-Codes, kann beliebig angepasst werden, welche Daten das gesammelt werden sollen. Ausserdem bietet Transaktionsloganalyse gegenüber den anderen Methoden die folgenden Vorteile\parencite[S. 174]{nakatani2011toolselectionmethod}:
+Page Tagging ist die Sammlung der Daten von Webseitenbesucher durch ein JavaScript-File auf jeder Webseite. Dieses JavaScript-File zeichnet das Verhalten des Seitenbesuchers auf, und sendet die Informationen an einen zentralen Datensammlungsserver \parencite[S. 173]{nakatani2011toolselectionmethod}.
+
+PageTagging ermöglichte es, im Gegensatz zu Transaktionsloganalyse, detaillierter Daten aufzuzeichnen. Da das JavaScript-Programm lokal auf dem Computer des Webseitenbesuchers ausgeführt wird, ist die Art der Daten die gesammelt werden können beinahe unbegrenzt. Durch das Modifizieren des JavaScript-Codes, kann beliebig angepasst werden, welche Daten das gesammelt werden sollen \parencite[S. 3]{waisberg2009webShort}. 
+
+Ausserdem bietet Page Tagging gegenüber den anderen Methoden die folgenden Vorteile \parencite[S. 174]{nakatani2011toolselectionmethod}:
 
 \begin{description}
   \item[Präzision] Page Tagging zählt alle Hits die durch Webbrowser ausgeführt werden. Durch das ausführen des JavaScript-Programm werden auch wenn die Seite im Cache ist die Hits gezählt.
@@ -183,11 +187,11 @@ Anders als beim kompletten Schweizer Markt, wurden in der Umfrage (siehe Anhang 
 \label{fig:verwVerteilungTools}
 \end{figure}
 
-Den grösste Teil der Befragten, verwendet das von i-web in das CMS integrierte Analysetool oder Matomo. Vereinzelt werden die Tools Google Analytics, Ryte und SiteImprove verwendet. Auch gibt es Anwender die angaben, dass sie ein in das CMS integriertes Tool verwenden. 
+Den grösste Teil der Befragten, verwendet das von i-web in das CMS integrierte Analysetool oder Matomo. Vereinzelt werden die Tools Google Analytics, Ryte und SiteImprove verwendet. Auch gibt es Anwender die angaben, dass sie ein in das CMS integriertes Tool verwenden. Dabei wurden keine Angaben gemacht um welches CMS-Tool es sich handelt. 
 
 
 \subsection{Google Analytics}\label{subsec:GoogleAnalytics}
-Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzten Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
+Google Analytics ist sowohl in der Schweiz als auch Global das am meisten eingesetzte Webanalyse Tool \parencite{datanyzeSwitzerlandWebanalytics}. 
 
 \subsubsection{Funktionalitäten und Eigenschaften}
 Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Analysetools folgende Eigenschaften auf:
@@ -223,8 +227,9 @@ Gemäss dem Hersteller und Anbieter des Services Google Analytics, weist das Ana
 	\label{tab: googleAnalyticsFeatures}
 \end{table}
 
-Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine Riesige Menge an Funktionalität, gute Visualisierungen und ist trotzdem Gratis. Dies ist für Anwender, darunter eine Verwaltung die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) teilgenommen hat, ein Grund sich für Google Analytics zu entscheiden. 
+Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google Analytics eine grosse Menge an Funktionalität, gute Visualisierungen und ist trotzdem gratis. Dies ist für Anwender, darunter eine Verwaltung die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) teilgenommen hat, ein Grund sich für Google Analytics zu entscheiden. 
 
+Anwender, die Google Analytics verwenden, haben in der Umfrage (siehe Anhang \ref{appendix:umfrage}) das Tool, wie veranschaulicht in Tabelle \ref{tab: googleanalyticsfeaturebewertung}, bewertet.
 
 \begin{table}[h]
 	\centering
@@ -254,7 +259,7 @@ Wie in Tabelle \ref{tab: googleAnalyticsFeatures} ersichtlich ist, bietet Google
     Maximale Anzahl von Metriken und Dimensionen & gut \\ \hline
 
 	\end{tabular}
-	\caption{Google Analytics - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\caption{Google Analytics - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable}, \parencite[S. 178]{nakatani2011toolselectionmethod} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
 	\label{tab: googleanalyticsfeaturebewertung}
 \end{table}
 
@@ -272,11 +277,11 @@ Es ist ebenfalls wichtig zu Verstehen, welche Daten gesammelt werden, und wie di
 Google verspricht ausserdem, dass die Daten nur über verschlüsselte Kommunikationskanäle erfolgt, um die Datensicherheit zu gewährleisten. Durch räumlich verteilte Rechenzeter und Datenreplikation wir die Betriebssicherheit gewährleistet \parencite{GoogleAnalyticsDatenschutz}.
 
 \subsubsection{Google Analytics - Fazit}
-Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. Nichts desto Trotz ergab die Umfrage (siehe Anhang \ref{appendix:umfrage}), dass zumindest auf einer Verwaltung Google Analytics eingesetzt wird. Aus den Antworten kann heraus gelesen werden, dass man sich beim Analysetool von Google eine On-Premise Option wünscht. dennoch sind die Anwender mit den Funktionalitäten des Tools zufrieden, besonders was die Visualisierungen und die Aktualität der Daten betrifft.
+Trotz allen Massnahmen, die Google für den Datenschutz unternimmt, bleibt Google Analytics für den Einsatz im Verwaltungskontext schwierig. Für die meisten Kantone fehlt schlicht und einfach die gesetzliche Grundlage, um den Einsatz und vor allem die Weitergabe der Daten zu rechtfertigen, für andere wäre der Aufwand hoch das System so zu konfigurieren, um Datenschutzkonform zu sein. Nichts desto Trotz ergab die Umfrage (siehe Anhang \ref{appendix:umfrage}), dass zumindest auf einer Verwaltung Google Analytics eingesetzt wird. Aus den Antworten kann heraus gelesen werden, dass man sich beim Analysetool von Google eine On-Premise Option wünscht. dennoch sind die Anwender mit den Funktionalitäten des Tools zufrieden, besonders was die Visualisierungen betrifft.
 
 \subsection{Facebook Analytics}
 
-Als zweit grösster Anbieter am Schweizer Markt, bietet Facebook Analytics Webanalyse als Service für ungefähr 3.5\% des Schweizer Marktes an.
+Als zweit grösster Anbieter am Schweizer Markt, bietet Facebook Analytics Webanalyse als Service für ungefähr 3.5\% des Schweizer Marktes an (siehe Abbildung \ref{fig:marktanteil}).
 
 \subsubsection{Funktionalitäten und Eigenschaften}
 Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funktionen im Analysetool verfügbar:
@@ -312,7 +317,7 @@ Gemäss der Offiziellen Webseite von Facebook Analytics, sind die folgenden Funk
 	\label{tab: facebookAnalyticsFeatures}
 \end{table}
 
-Facebook Analytics, macht wie in Tabelle \ref{tab: facebookAnalyticsFeatures} ersichtlich ist, keine aussagen dazu wie gross das Volumen ist das bearbeitet werden kann. 
+Facebook Analytics macht, wie in Tabelle \ref{tab: facebookAnalyticsFeatures} ersichtlich ist, keine aussagen dazu wie gross das Volumen ist das bearbeitet werden kann. 
 Auch Facebook Analytics bietet einen Dienst an, der viele Funktionen hat und gratis zur Verfügung steht. 
 
 \subsubsection{Datenschutz}
@@ -365,7 +370,7 @@ Laut dem Hersteller weist es die folgenden Eigenschaften auf:
 	\label{tab: MatomoFeatures}
 \end{table}
 
-Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics \ref{subsec:GoogleAnalytics}. Einzig über die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}. 
+Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an wie Google Analytics (siehe Kapitel \ref{subsec:GoogleAnalytics}). Einzig in Bezug auf die Berichterstellung werden bei Matomo kaum Features genannt, ausser dass Benutzerdefinierte Performanceberichte erstellt werden können \parencite{MamotoFeatures}. 
 
 \begin{table}[h]
 	\centering
@@ -395,10 +400,9 @@ Matomo bietet ähnliche Funktionen (Vgl. Tabelle \ref{tab: MatomoFeatures}) an w
     Maximale Anzahl von Metriken und Dimensionen & gut \\ \hline
 
 	\end{tabular}
-	\caption{Matomo - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\caption{Matomo - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable}, \parencite[S. 178]{nakatani2011toolselectionmethod} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
 	\label{tab: matomofeaturebewertung}
 \end{table}
-
 
 Gemäss Matomo Anwendern die an der Umfrage (siehe Tabelle \ref{tab: matomofeaturebewertung}) beteiligt waren, liegen die Stärken von Matomo darin, dass die Daten aktuell sind und die Analyse- und Visualierungstools gut sind. 
 Auch positiv fiel das Feedback über die Installation des Tools aus, obwohl es als On-Premise Anwendung wohl eine kompliziertere Installation als andere Tools aufweisen dürfte.
@@ -421,6 +425,7 @@ Matomo bietet die folgenden Massnahmen, um den Datenschutz gewährleisten zu kö
 \end{description}
 
 \subsubsection{Matomo - Fazit}
+
 Matomo bietet mit seinen grossen Bemühungen zur Datenschutzkonformität eine gute Basis für den Einsatz im Verwaltungskontext. Dass Daten die jeweilige Stelle nicht verlassen müssen, ist ein wichtiges Kriterium um in sämtlichen Kantonen sicherzustellen, dass alle Gesetze eingehalten werden (Vgl. Tabelle \ref{tab: ktrechtslage}). Dies widerspiegelt auch die Umfrage (siehe Anhang \ref{appendix:umfrage}). Bei den Befragten waren die Kriterien, die zur Auswahl von Matomo als Analysetool führten, das In-House-Hosting der Daten, die Konformität mit den Datenschutzgesetzen und auch die Gegebenheit, dass Matomo eine OpenSource-Lösung ist.  
 
 \subsection{i-CMS}
@@ -512,7 +517,7 @@ Verwaltungen die i-CMS einsetzen, bewerten die Funktionen des integrierten Analy
     Maximale Anzahl von Metriken und Dimensionen & ausgezeichnet \\ \hline
 
 	\end{tabular}
-	\caption{i-CMS Webanalysetool - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
+	\caption{i-CMS Webanalysetool - Durchschnittliche Bewertung der Eigenschaften \parencite{softwareProcurementEvaluationTable}, \parencite[S. 178]{nakatani2011toolselectionmethod} gemäss Umfrage (siehe Anhang \ref{appendix:umfrage})}
 	\label{tab: icmsfeaturebewertung}
 \end{table}
 
@@ -523,15 +528,31 @@ Innovative Web AG gibt auf ihrer Webseite \parencite{iwebwebsiteKanotonWeb} an, 
 \end{quote}
 
 \subsubsection{i-CMS - Fazit}
+
 I-CMS zeigt sich als gutes Tool für Verwaltungen, da es durch seine Komplettlösung alle Bedürfnisse bis hin zur Webanalyse abdeckt. Auch für die Datenschutzkonformität ist gesorgt, was der Verwaltung eine grosse Erleichterung bring. Speziell für kleinere Verwaltungen, wie Gemeinde- oder Stadtverwaltungen, bietet i-CMS eine kompakte Lösung, welche die Suche nach einem Analysetool erübrigt. 
 
 \subsection{Erwähnenswerte Tools}
 
+Vereinzelt traten in der Umfrage (siehe Anhang \ref{appendix:umfrage}) andere, etwas unbekanntere Tools auf. Diese werden in diesem Kapitel kurz erläutert. 
+
 \subsubsection{Ryte}
+
+Ryte ist ein Kostenpflichtiges Webanalysetool hergestellt in Deutschland. Es bietet sowohl inhaltliche Analysen, wie auch Technische Analysen wie zum Beispiel JavaScript Crawling. Es eignet sich also für Webseiten deren Quellcodeverwaltung intern gehalten wird \parencite{RyteFeatures}. Es wird auch eine Gratisversion von Ryte, Ryte Free, angeboten \parencite{RyteFree}.
+
+Anwender von Ryte gaben an das Tool ausgewählt zu haben, da es einfache und aufschlussreiche Analysen ermöglicht (siehe Anhang \ref{appendix:umfrage}). Ausserdem wurde als Muss-Kriterium angegeben, dass das Verwenden eines Webanalysetools gratis sein müsse. Daraus lässt sich schliessen, dass in dieser Verwaltung Ryte Free verwendet wird. Die Bewertung der Features fällt durchschnittlich aus, mit guten Visualisierungen und Auswertungen. Die Dokumentation und Erlernbarkeit des Tools fallen ein bisschen schwach aus. 
 
 \subsubsection{SiteImprove}
 
+SiteImprove Analytics bietet durch Features wie Echtzeit-Feedback und Analysen Einblicke in das Benutzererlebnis. Ausserdem werden von SiteImprove zum Analysetool hinzu noch weitere Services angeboten, wie zum Beispiel Qualitätskontrolle \parencite{SiteimproveFeatures}.
+
+Laut den Anwender von SiteImprove die an der Umfrage (siehe Anhang \ref{appendix:umfrage}) beteiligt waren, zeichnet sich SiteImprove durch einen ausgezeichneten Support aus. Ausserdem werden auch die Massnahmen über den Datenschutz wertgeschätzt.
+
 \section{Vorgehen bei der Tool-Auswahl}
+
+Durch die gesetzlichen Gegebenheiten und Anforderungen an Analysetools im Verwaltungskontext, ist die Auswahl eines Tools stark daran gebunden, was das jeweilige Tool für Möglichkeiten vorweist, datenschutzgerecht Tracking zu betreiben. Da dies aber sowohl von dem Einsatzgebiet der Verwaltung, als auch dem jeweiligen Tool abhängig ist, kann keine definitive aussage gemacht werden,  welches Tool sich am besten eignet. Zudem kommen nebst dem Datenschutz auch andere Kriterien hinzu, die nicht vernachlässigt werden sollten. Schlussendlich muss das Tool auch gut bedienbar und benutzerfreundlich sein, um im Produktionseinsatz Anklang zu finden. Dementsprechend muss jede Verwaltung separat analysieren können, welches Tool sich am besten eignet. Wie eine solche Analyse aussehen könnte, wird in diesem Kapitel erläutert. 
+
+\subsection{Tool Auswahl nach AHP}
+
 
 
 \section{Reflexion}
