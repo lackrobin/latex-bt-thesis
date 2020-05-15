@@ -3,15 +3,15 @@
 Unter Verwaltungskontext versteht man den Bereich, in welchem sich die öffentlichen Verwaltungen befinden. Die Verwaltung in der Schweiz unterteilt sich in drei Ebenen. Die nationale Ebene, die kantonale Ebene, bestehend aus 26 Kantonen und die Gemeindeebene, bestehend aus ungefähr 2200 Gemeinden \parencite[S. 26-30]{HANDBOEFFVER}.
 
 Die Aufgaben und Kompetenzen der jeweiligen Ebene sind in der Tabelle \ref{tab:aufgabenverwaltungsk} beschreiben. 
-
+\newpage
 \begin{table}[h]
 	\centering
-\begin{tabular}{|p{4cm}|p{10cm}|}
+\begin{tabular}{|p{2.5cm}|p{11.5cm}|}
   \hline
   \textbf{Ebene} & \textbf{Kompetenzen} \\ \hline
    National & Auslandsbeziehungen, Sicherheit, Landesverteidigung,Zivilschutz, Bildung, Forschung, Kultur, Umwelt- und Raumplanung,Öffentliche Arbeiten, Transport, Energie, Kommunikation, die Wirtschaft,Wohnen, Beschäftigung, soziale Sicherheit, Gesundheit, Vorübergehender und ständiger Aufenthalt von Ausländern, das Finanzsystem, Zivilrecht und Strafrecht \\ \hline
-   Kantonal & Umweltschutz, Schutz der Natur und des kulturellen Erbes,Regional- / Landnutzungsplanung, Bauvorschriften, Transport und Straßen,Wasser- und Energieversorgung, Abwasserbehandlung und Abfallentsorgung,Aufrechterhaltung der öffentlichen Ordnung und Sicherheit, Sozialhilfe,Arbeit, Behausungen, Gesundheitsvorsorge, Schulen Universitäten und Fachhochschulen, Medien, Kultur, Freizeit, Sport und Erholung, Land-und Forstwirtschaft, Kantonale Nutzungsrechte (für Salz, Wasser, Berge, Jagd und Fischerei), Kantonalbank\\ \hline
-   Gemeinde & \\ \hline
+   Kantonal & Umweltschutz, Schutz der Natur und des kulturellen Erbes,Regional- / Landnutzungsplanung, Bauvorschriften, Transport und Strassen,Wasser- und Energieversorgung, Abwasserbehandlung und Abfallentsorgung,Aufrechterhaltung der öffentlichen Ordnung und Sicherheit, Sozialhilfe,Arbeit, Behausungen, Gesundheitsvorsorge, Schulen Universitäten und Fachhochschulen, Medien, Kultur, Freizeit, Sport und Erholung, Land-und Forstwirtschaft, Kantonale Nutzungsrechte (für Salz, Wasser, Berge, Jagd und Fischerei), Kantonalbank\\ \hline
+   Gemeinde & Kindergarten, Grundschule und Mittelschule, Wohlfahrt, ambulante Pflege, Altenpflege und Sozialversicherungsaufgaben, Abwasser, Müll, Strom, Öffentliche Verkehrsmittel innerhalb der Gemeinde, Gemeindezonen- und Landnutzungsplanung, Bauinspektion, Erhaltung des Natur- und Kulturerbes, Strassen und Wege, Sportinfrastruktur und kulturelle Einrichtungen, Ernennung oder Wahl von Beamten, Organisation der Verwaltung und Personalverwaltung, Budgetierung und Buchhaltung, Verwaltung des Eigentums und des Vermögens der Gemeinde und Festlegung des Steuersatzes der Gemeinde, Brandschutzbehörden, Verkehrspolizei und Arbeitsaufsichtsbeamte, Gewährung der Gemeinschaftsbürgerschaft an ausländische Einwohner \\ \hline
   \end{tabular} 
 	\caption{Aufgaben und Kompetenzen im Verwaltungskontext \parencite[S. 26-30]{HANDBOEFFVER}}
 	\label{tab:aufgabenverwaltungsk}
@@ -646,7 +646,21 @@ Für die verwendeten Kriterien wurde im Kapitel \ref{sec:marktangebotwebanalyse}
 \end{itemize}
 \newpage
 
-Da sich die Wichtigkeit der Kriterien von Organisation zu Organisation unterscheiden, werden für die nachfolgenden Berechnungsbeispiele der Kriterien Schauzahlen verwendet. Die Zahlen der Gegenüberstellung der Tools leitet sich aus den Ergebnissen der Umfrage (siehe Anhang \ref{appendix:umfrage}) ab. 
+Da sich die Wichtigkeit der Kriterien von Organisation zu Organisation unterscheiden, werden für die nachfolgenden Berechnungsbeispiele der Kriterien Schauzahlen verwendet. Die Zahlen der Gegenüberstellung der Tools leitet sich aus den Ergebnissen der Umfrage (siehe Anhang \ref{appendix:umfrage}) ab. Zur Umrechnung der Ergebnisse auf die Werte wurde die Umrechnungsmatrix veranschaulicht in Tabelle \ref{tab:umrechMatrix} verwendet:
+
+\begin{table}[h]
+	\centering
+  \begin{tabular}{cccccc}
+    & nicht beantw. & mangelhaft & i.O & gut & ausgezeichnet \\
+    nicht beantw. & 1 & 0,25 - 0,5 & 0,25 - 0,5 & 0,25 - 0,5 & 0,25 - 0,5 \\
+    mangelhaft & 2-4 & 1 & 0,5 & 0,333 & 0,25 \\
+    in Ordnung & 2-4 & 2 & 1 & 0,5 & 0,333 \\
+    gut & 2-4 & 3 & 2 & 1 & 0,5 \\
+    ausgezeichnet & 2-4 & 4 & 3 & 2 & 1 \\
+    \end{tabular} 
+	\caption{Umrechnugsmatrix - Umfrageergebnisse zu AHP Punktzahl}
+	\label{tab:umrechMatrix}
+\end{table}
 
 Für die Hauptkriterien können nun mittels Matrix die Gewichtungen ermittelt werden. Die Gewichte der Hauptkriterien dienen der Verrechnung mit den Unterkriterien. 
 \begin{table}[h]
