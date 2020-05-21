@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper, twoside]{report}
+\documentclass[12pt, a4paper, twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{longtable}
@@ -23,11 +23,10 @@
 \pgfplotsset{width=6.6cm,compat=1.7}
 
 \usepackage[style=authoryear, backend=biber]{biblatex}
-\addbibresource{references.bib} 
+\addbibresource{references.bib}
 \listfiles
 
 \usepackage{parskip}
-
 \usepackage{url} 
 \expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
   \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
@@ -52,7 +51,6 @@
 \author{\input{tex/text-resources/author}}
 \date{\today}
 
-
 \begin{document}
 \sloppy
 \input{titlepage}
@@ -68,6 +66,8 @@
 \renewcommand{\tablename}{Tabelle}
 \tableofcontents
 
+\newpage
+
 \glsaddall
 
 
@@ -75,25 +75,27 @@
 
 \input{tex/abrev}
 
-\chapter{Einleitung}
+\newpage
+
 \input{tex/introduction}
 
-\chapter{Hauptteil}
 \input{tex/results}
 
-
-\printbibliography[title={Literaturverzeichnis}, heading=bibintoc]
+\newpage
+\printbibliography[title={Literaturverzeichnis der Bücher},type=book, heading=bibintoc]
+\newpage
+\printbibliography[title={Literaturverzeichnis der Artikel}, type=article, heading=bibintoc]
+\newpage
+\printbibliography[title={Online-Ressourcen und E-Mails}, nottype=article, nottype=book, heading=bibintoc]
 
 \listoffigures
 
 \listoftables
 
 \appendix
-\chapter{Umfrage}
+\section{Umfrage}
 \input{tex/appendix}
-\chapter{E-Mail i-web}
-\input{tex/appendix2}
-\chapter{Berechnungen mit AHP}
+\section{Berechnungen mit AHP}
 \input{tex/appendix3}
 
 \end{document}

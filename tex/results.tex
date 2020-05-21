@@ -3,7 +3,7 @@
 Unter Verwaltungskontext versteht man den Bereich, in welchem sich die öffentlichen Verwaltungen befinden. Die Verwaltung in der Schweiz unterteilt sich in drei Ebenen. Die nationale Ebene, die kantonale Ebene, bestehend aus 26 Kantonen und die Gemeindeebene, bestehend aus ungefähr 2200 Gemeinden \parencite[S. 26-30]{HANDBOEFFVER}.
 
 Die Aufgaben und Kompetenzen der jeweiligen Ebene sind in der Tabelle \ref{tab:aufgabenverwaltungsk} beschreiben. 
-\newpage
+
 \begin{table}[h]
 	\centering
 \begin{tabular}{|p{2.5cm}|p{11.5cm}|}
@@ -32,8 +32,6 @@ Webanalysen können aber auch aufgrund von anonymisierten, respektive pseudonymi
 
 Trotz allen Vorkehrungen, die getroffen werden, um den Datenschutz zu gewährleisten, erfordert ein rechtskonformer Einsatz von Analysetools auch in Zukunft eine genaue Analyse der Rechtslage und kann nicht pauschal das eine oder das andere Tool richtig geheissen werden \parencite[S. 6]{EcommerceUndDatenschutz}.
 
-\newpage
-
 \subsection{Das kantonale Datenschutzgesetz}
 Zusätzlich zum Bundesgesetz für Datenschutz unterliegen Verwaltungen dem jeweiligen kantonalen Datenschutzgesetz. Die kantonalen Datenschutzgesetze regeln die Rechtslage zum Schützen von Personen vor Datenmissbrauch durch die Behörden \parencite[Vgl. §§ 1 Abs. 1]{DSSGBERN}. 
 
@@ -41,6 +39,7 @@ Die strikten und von Kanton zu Kanton unterschiedlichen Gesetze zum Datenschutz 
 
 In der unten stehenden Tabelle \ref{tab: ktrechtslage} ist veranschaulicht, welche Gesetzesartikel die Handhabung anonymisierter Daten regeln und wie die Rechtslage im jeweiligen Kanton aussieht.
 
+\newpage
 \begin{longtable}{| p{.20\textwidth} | p{.75\textwidth}|} 
 		\hline
 		\textbf{Kanton} & \textbf{Rechtslage}  \\ 
@@ -104,6 +103,7 @@ In der unten stehenden Tabelle \ref{tab: ktrechtslage} ist veranschaulicht, welc
   Wie aus der Tabelle \ref{tab: ktrechtslage} entnommen werden kann,
   legt ein Grossteil der Kantone fest, dass für Statistiken Personendaten verwendet werden dürfen, sofern diese anonymisiert sind und aus den Ergebnissen keine Rückschlüsse auf betroffene Personen möglich sind. In wenigen Fällen ist geregelt, dass auch die Weitergabe zur Verarbeitung der anonymisierten Daten eingeschränkt ist. Für die Webanalysetools ist dies ein wichtiger Punkt. Die Verarbeitung der Daten findet bei den meisten Analysetools, die als SaaS oder ASP angeboten werden, auf zentralen Servern im Ausland statt. Nur wenn die Webanalyse In-House betrieben wird, kann davon ausgegangen werden, dass Daten nicht zur Verarbeitung weitergegeben werden \parencite[S. 174-176]{nakatani2011toolselectionmethod}.
 
+  \newpage
 
 \subsection{Strategien zur Datenschutzkonformität}
 Webanalysetools an sich sind nicht datenschutzkonform \parencite[S. 1-4]{EcommerceUndDatenschutz}. Es liegt am Webanalysebetreiber, das richtige Tool auszuwählen und in erster Linie das Tool richtig zu konfigurieren, so dass keine Datenschutzgesetze verletzt werden.
@@ -527,7 +527,7 @@ Wie in der Abbildung \ref{fig:icmszuwachs} ersichtlich ist, gewinnt i-CMS in den
 \end{figure}
 
 \subsubsection{Funktionalitäten und Eigenschaften}
-Der Hersteller von i-CMS gibt auf der Webseite keine Informationen dazu preis, welche Funktionen das Tool bietet. Jedoch sind einige Eigenschaften auf Anfrage genannt worden. Das Analysetool des i-CMS bietet gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}) die folgenden Funktionalitäten an:
+Der Hersteller von i-CMS gibt auf der Webseite keine Informationen dazu preis, welche Funktionen das Tool bietet. Jedoch sind einige Eigenschaften auf Anfrage genannt worden. Das Analysetool des i-CMS bietet gemäss Innovative Web AG \parencite{email} die folgenden Funktionalitäten an:
 
 \begin{quote}
   "Die integrierte Business-Statistik zeichnet die Zugriffe eindeutiger Benutzer/-innen pro Modul auf (meistbesuchte Module und meistbesuchte Objekte pro Modul).. Auch detaillierte Informationen zum Benutzerverhalten (Herkunft, Suchbegriffe, Nutzung eGov-Applikationen usw.) werden aufgezeichnet. Dazu kommen Informationen zur Infrastruktur (Geräte und Betriebssysteme), Loyalität (Aufenthaltsdauer, Anzahl besuchte Seiten) usw."
@@ -583,7 +583,7 @@ Innovative Web AG gibt auf ihrer Webseite \parencite{iwebwebsiteKanotonWeb} an, 
   \label{fig: urweb}
 \end{figure}
 
-Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteCMS} ausschliesslich in der Schweiz statt (siehe auch Abbildung \ref{fig: urweb}) und werden anonymisiert gehalten. Es können aus den gesammelten Daten der Statistik also keine Rückschlüsse auf einzelne Personen gezogen werden. Dies wird durch den Hersteller bestätigt. Gemäss Innovative Web AG (siehe Anhang \ref{appendix:emailiweb}), gewährleistet das Analysetool des i-CMS den Datenschutz folgendermassen:
+Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteCMS} ausschliesslich in der Schweiz statt (siehe auch Abbildung \ref{fig: urweb}) und werden anonymisiert gehalten. Es können aus den gesammelten Daten der Statistik also keine Rückschlüsse auf einzelne Personen gezogen werden. Dies wird durch den Hersteller bestätigt. Gemäss Innovative Web AG  \parencite{email}, gewährleistet das Analysetool des i-CMS den Datenschutz folgendermassen:
 
 \begin{quote}
   "Die Datenschutzkonformität der Datensammlung wird sichergestellt durch Anonymisierung und “Einwilligungs-Knopf"
@@ -592,6 +592,9 @@ Die Verarbeitung der Daten findet laut Innovative Web AG \parencite{iwebwebsiteC
 \subsubsection{i-CMS - Fazit}
 
 I-CMS zeigt sich als gutes Tool für Verwaltungen, da es durch seine Komplettlösung alle Bedürfnisse bis hin zur Webanalyse abdeckt. Auch für die Datenschutzkonformität ist gesorgt, was der Verwaltung eine grosse Erleichterung bring. Speziell für kleinere Verwaltungen, wie Gemeinde- oder Stadtverwaltungen, bietet i-CMS eine kompakte Lösung, welche die Suche nach einem Analysetool erübrigt. Es lässt sich jedoch nicht in einen bestehenden Webauftritt integrieren, da das Analysetool mit dem CMS zusammen angeboten wird. 
+
+
+\newpage
 
 \subsection{Erwähnenswerte Tools}
 
@@ -613,8 +616,6 @@ Laut den Anwendern von SiteImprove, die an der Umfrage (siehe Anhang \ref{append
 \subsection{Erkenntnisse der Tool-Analyse}
 
 Aufgrund der Analysen im Kapitel \ref{sec:marktangebotwebanalyse} wurde ersichtlich, dass sich nicht alle Tools gleichermassen für den Einsatz im Verwaltungskontext eignen. Einige Tools, wie zum Beispiel Facebook Analytics (siehe Abschnitt \ref{subsec:FacebookAnalytics}), bieten nicht genügend Datenschutzmassnahmen, um für Verwaltungen attraktiv zu sein. Sich eignende Tools sind definitiv Matomo und i-CMS. Dies bestätigt auch die Praxis: Die beiden Tools werden von Verwaltungen, wie dies in Abbildung \ref{fig:verwVerteilungTools} ersichtlich ist, am häufigsten eingesetzt. Zudem scheint auch Google Analytics, wenn auch verbunden mit aufwendigen Massnahmen zur Gewährleistung des Datenschutzes, gangbar zu sein. Zudem bietet Google durch seine überwältigende Marktpräsenz eine Vielzahl an Ressourcen und gilt zu einem gewissen Grad als der Standard der Webanalyse. Die drei Tools, Google Analytics, Matomo, und i-CMS wurden ausgewählt, um eine Toolauswahl zu simulieren. Dies wird in Kapitel \ref{sec:toolsel} veranschaulicht.
-
-\newpage
 
 \section{Vorgehen bei der Tool-Auswahl} \label{sec:toolsel}
 
@@ -823,15 +824,17 @@ Ebenfalls spannend war es, mittels der AHP Methode einen wissenschaftlichen Weg 
 
 Was mir durch diese Arbeit klar wurde, ist dass Google ein mächtiges Monopol auf der Webanalyse hat. Über 80\% des gesamten Marktes verwendet das Analysetool von Google. Mit dieser Aufstellung befindet sich Google in einer Position, in der sie den Grossteil des Internet-Traffics analysieren können. Was diese Sammlung von Daten genau bedeutet, ist derzeit noch unklar und wird sich wohl in den nächsten Jahren genauer herauskristallisieren. Ich bin mir aber sicher, dass Tools wie Matomo, welche grossen Wert auf den Schutz der Personendaten legen, und Google Analytics würdige Rivalen sind. Speziell für den Einsatz in Verwaltungen scheint sich zumindest Matomo besser zu eignen.
 
+\newpage
 
-\chapter{Fazit}
+\section{Fazit}
 Die Analyse hat bestätigt, dass tatsächlich eine grosse Menge an Webanalysetools auf dem Markt existieren. Ungefähr 129 dieser Tools werden auf dem Schweizer Markt eingesetzt, wie dies in Kapitel \ref{sec:marktangebotwebanalyse} beschrieben ist. Jedoch zeigt Kapitel \ref{sec:marktangebotwebanalyse} auch, dass der grösste Teil der Webanalysebetreiber das Tool Google Analytics einsetzen. Die anderen Anbieter kämpfen um jedes Promille an Marktanteilen, während Google Analytics über 80\% des Marktes beherrscht. Anders sieht es jedoch aus, wenn der Markt auf den Verwaltungskontext eingegrenzt wird. Die gesetzlichen Restriktionen, denen die Verwaltungen durch die kantonalen Datenschutzgesetze unterliegen, machen das Einsetzen gewisser Tools problematisch, wenn nicht gar unmöglich. Mitunter gehört zu diesen Tools Facebook Analytics. Während es nach Google Analytics den zweitgrössten Marktanteil aufweist, wurde es in der Umfrage kein einziges Mal erwähnt. Nach einer Analyse des Tools in Kapitel \ref{subsec:FacebookAnalytics} wurde ersichtlich, dass Facebook Analytics nur geringe Massnahmen zum Schutz der Personendaten aufweist, was es für den Einsatz im Verwaltungskontext unattraktiv macht. Auch Google Analytics scheint sich aufgrund derselben Gründe nicht gut für den Verwaltungskontext zu eignen. Dennoch zeigt Google Analytics mehrere Massnahmen auf, um Datenschutzkonformität zu gewährleisten. So wird in Kapitel \ref{subsec:GoogleAnalytics} ersichtlich, dass der Einsatz von Google Analytics zwar nach wie vor problematisch aber je nach kantonalem Datenschutzgesetz möglich ist. Ein interessantes Tool, das sich sowohl auf dem zweiten Platz in der Umfrage als auch in den Top-5 des Schweizer Marktes befindet, ist Matomo.
 Die Analyse des Tools in Kapitel \ref{subsec:matomomarkt} ergab, dass sich dieses Tool nicht nur durch Opensourcing des Quellcodes und durch das Anbieten von On-Premise-Analysen sondern auch durch etliche andere Datenschutzmassnahmen auszeichnet. Dies, zusammen mit den angebotenen Features des Tools, macht es für Verwaltungen zu einer attraktive Alternative. Ein Tool, welches zu Beginn überhaupt nicht auf dem Radar war, ist das in das CMS integrierte Analysetool der Firma Innovative Web AG i-CMS. Die Umfrage machte ersichtlich, dass dies ein in Verwaltungen oft eingesetztes Tool ist. Die Analyse von i-CMS in Kapitel \ref{subsec:icmsmarkt} ergab, dass die Innovative Web AG ihr Produkt speziell für den Einsatz in Verwaltungen konzipiert hat. Dabei wurde darauf Acht gegeben, die Konformität der kantonalen Datenschutzgesetze zu gewährleisten. I-CMS ist jedoch, anders als die anderen Analysetools, eine komplette CMS-Lösung, welche ein In-House entwickeltes Analysetool beinhaltet. Das heisst, es kann nicht einfach in eine bestehende Webseite eingefügt werden. 
 
 Durch die Analyse der Datenschutzgesetze in Kapitel \ref{subsec:datenschutz} sowie der Umfrage (siehe Anhang \ref{appendix:umfrage}) wurde klar, dass sich die Anforderungen auch zwischen den einzelnen Verwaltungen unterscheiden können. Deswegen ist es wichtig, dass Verwaltungen eine Methode zur Verfügung gestellt wird, welche sie beim Auswählen eines Tools unterstützt. Hierbei zeigte sich AHP als eine aussagekräftige Methode, um dieses Ziel zu erreichen. Durch die Gewichtung der Wichtigkeit der einzelnen Aspekte und Eigenschaften von Analyse Tools und deren Gegenüberstellung mit der Erfüllung der Kriterien der jeweiligen Analysetools lässt sich eine Entscheidung zwischen mehreren Tools berechnen. Die Berechnungen, welche in Kapitel \ref{sec:toolsel} durchgeführt wurden, geben Aufschluss darüber, wie die Berechnung zur Selektion eines Tools in einer Verwaltung aussehen sollte. Im Beispiel, das berechnet wurde, kam heraus, dass sich Matomo für den Einsatz am besten eignet. Hierbei handelte es sich jedoch um eine Berechnung mit beispielhafter Datengrundlage, dienlich zur Veranschaulichung der Benutzung von AHP im Zusammenhang mit Webanalysetools. 
 
+\newpage
 
-\chapter{Selbständigkeitserklärung}
+\section{Selbständigkeitserklärung}
 
 Ich bestätige, die vorliegende Arbeit selbständig verfasst zu haben. Sämtliche Textstellen, die nicht von mir stammen, sind als Zitate gekennzeichnet und mit dem genauen Hinweis auf ihre Herkunft versehen. Die verwendeten Quellen (gilt auch für Abbildungen, Grafiken u.ä.) sind im Literatur- bzw. Quellenverzeichnis aufgeführt.
 
